@@ -1,5 +1,5 @@
 const cacheName = "aamedia"
-const preCache = ["/", "/style.css", "/Amiri-Regular.ttf"] //backup
+const preCache = ["/", "/style.css"] //backup
 
 self.addEventListener("install", (e)=>{
   console.log("service worker installed")

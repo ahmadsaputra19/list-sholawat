@@ -1,0 +1,21 @@
+{
+  "name":"al-'asyiqin-pekalongan",
+  "start_url":".",
+  "display":"standalone",
+  "theme_color":"#f8fcfa",
+  "background_color":"#f8fcfa",
+  "icons":[
+    {
+    "src":"img/20220921_132919.png",
+    "type":"image/png",
+    "sizes":"192x192"
+    },
+    {
+    "src":"img/20220925_192107.png",
+    "type":"image/png",
+    "sizes":"512x512",
+    "purpore":"maskable"
+    }
+    
+    ]
+}

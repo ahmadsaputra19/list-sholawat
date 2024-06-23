@@ -1,17 +1,17 @@
 {
-  "name":"al-'asyiqin-pekalongan",
+  "name":"aa-media-list-sholawat",
   "start_url":".",
   "display":"standalone",
-  "theme_color":"#f8fcfa",
-  "background_color":"#f8fcfa",
+  "theme_color":"#010310",
+  "background_color":"#010310",
   "icons":[
     {
-    "src":"img/20220921_132919.png",
+    "src":"aamedia.png",
     "type":"image/png",
     "sizes":"192x192"
     },
     {
-    "src":"img/20220925_192107.png",
+    "src":"aamedia.png",
     "type":"image/png",
     "sizes":"512x512",
     "purpore":"maskable"

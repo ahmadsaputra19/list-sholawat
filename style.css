@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+
+body {
+    background-color: #010310;
+    color: #fff;
+}
+
+.logoSholawat {
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    rotate: 45deg;
+}
+
+.logoSholawat:hover{
+    background-color: #DBD400;
+    transition: 0.3s ease-in-out;
+}
+
+p {
+    color: #000;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    background-color: #080718;
+    margin: 0 220px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img{
+    height: 30px;
+}
+
+.judul h2{
+    color: #000;
+}
+
+.judul {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.option {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    gap: 10px;
+}
+
+.option a{
+    cursor: pointer;
+    border: 0.2px solid white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.option a:hover{
+    background-color: #DBD400;
+    color: #010310;
+    transition: 0.2s ease-in-out;
+}
+
+/* .arab {
+  font-family: 'arab.ttf', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-size: 4vw;
+} */
+
+#sholawat-option button:hover{
+    background-color: #DBD400;
+    color: #010310;
+    transition: 0.2s ease-in-out;
+}
+
+.arab p{
+    margin-bottom: 2px;
+    font-size: 2vw;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 576px){
+    section {
+        margin: 0 auto;
+    }
+    .option {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    .arab p{
+        font-size: 4vw;
+    }
+    .logoSholawat {
+      bottom: 15px;
+      right: 15px;
+      height: 30px;
+      width: 30px;
+    }
+}

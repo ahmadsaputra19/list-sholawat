@@ -20,6 +20,12 @@
     font-style: normal;
   }
 
+  .scheherazade-new-medium {
+    font-family: "Scheherazade New", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
 body {
     background-color: #010310;
     color: #fff;
@@ -82,7 +88,7 @@ section {
 
 .judul h2{
     color: #000;
-    font-family: 'Amiri', serif;
+    font-family: 'Scheherazade New', serif;
 }
 
 .judul {
@@ -130,7 +136,7 @@ section {
 }
 
 .arab p{
-    font-family: 'Amiri', serif;
+    font-family: 'Scheherazade New', serif;
     font-size: 2vw;
 }
 

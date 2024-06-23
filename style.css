@@ -5,6 +5,13 @@
     font-family: 'arial', sans-serif;
 }
 
+@font-face {
+    font-family: 'arabic';
+    src: url('/ScheherazadeNew-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #010310;
     color: #fff;
@@ -60,6 +67,7 @@ section {
 
 .judul h2{
     color: #000;
+    font-family: 'arabic', serif;
 }
 
 .judul {
@@ -107,7 +115,8 @@ section {
 }
 
 .arab p{
-    margin-bottom: 2px;
+    margin-bottom: 100px;
+    font-family: 'arabic', serif;
     font-size: 2vw;
 }
 

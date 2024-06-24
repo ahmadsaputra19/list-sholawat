@@ -7,12 +7,12 @@
     font-family: 'arial', sans-serif;
 }
 
-/* @font-face {
-    font-family: 'Amiri-Regular';
-    src: url('/Amiri-Regular.ttf') format('truetype');
+@font-face {
+    font-family: 'ScheherazadeNew-Medium';
+    src: url('./ScheherazadeNew-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-} */
+}
 
   .scheherazade-new-medium {
     font-family: "Scheherazade New", serif;
@@ -83,6 +83,7 @@ section {
 .judul h2{
     color: #000;
     font-family: 'Scheherazade New', serif;
+    font-family: 'ScheherazadeNew-Medium', sans-serif;
 }
 
 .judul {
@@ -131,10 +132,20 @@ section {
 
 .arab p{
     font-family: 'Scheherazade New', serif;
+    font-family: 'ScheherazadeNew-Medium', sans-serif;
     font-size: 2vw;
 }
 
 /* Responsive Breakpoint */
+@media (max-width: 920px){
+    section {
+        margin: 0 60px;
+    }
+    .option {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
 @media (max-width: 576px){
     section {
         margin: 0 auto;

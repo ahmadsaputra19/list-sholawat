@@ -25,29 +25,6 @@ body {
     color: #fff;
 }
 
-.logoSholawat {
-    cursor: pointer;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 30px;
-    right: 30px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-.to-top {
-    width: 30px;
-    height: 30px;
-}
-
-.logoSholawat:hover{
-    background-color: #DBD400;
-    transition: 0.3s ease-in-out;
-}
-
 p {
     color: #000;
 }
@@ -65,6 +42,50 @@ section {
     background-color: #080718;
     margin: 0 220px;
 }
+
+header {
+    margin: 0 220px;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+    background-color: #080718;
+}
+
+.icon{
+    color: #fff;
+}
+
+.icon li a img{
+    margin-top: -20px;
+    height: 65px;
+}
+
+.icon li a p:hover{
+    color: #DBD400;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li{
+    margin-left: 25px;
+}
+
+.list li a:hover{
+    color: #DBD400;
+    transition: 0.3s ease-in-out;
+}
+
 
 .container {
     padding: 20px;
@@ -124,7 +145,11 @@ section {
   font-size: 4vw;
 } */
 
-#sholawat-option button:hover{
+.option-btn {
+    margin: auto 25px;
+}
+
+.option-btn button:hover{
     background-color: #DBD400;
     color: #010310;
     transition: 0.2s ease-in-out;
@@ -136,8 +161,159 @@ section {
     font-size: 2vw;
 }
 
+.logoSholawat {
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.to-top {
+    width: 30px;
+    height: 30px;
+}
+
+.logoSholawat:hover{
+    background-color: #DBD400;
+    transition: 0.3s ease-in-out;
+}
+
+/* kontak */
+#contact {
+    padding: 5rem;
+    background: #080718;
+    mask-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)50px);
+  }
+  .kontak-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .kontak-form h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .kontak-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .kontak-form input,
+  .kontak-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .kontak-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .kontak-form button:hover {
+    background-color: #218838;
+  }
+  
+  .kontak-form input,
+  .kontak-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .kontak-form textarea {
+    resize: none; /* Prevent resizing */
+    height: 150px; /* Set a fixed height */
+    overflow-y: auto; /* Add vertical scrollbar when needed */
+  }
+  .kontak-form form .kirim {
+    background-color: #010310;
+  }
+  .kontak-form form .kirim:hover{
+    background-color: #48aaf4;
+    transition: 0.3s ease-in-out;
+  }
+  
+/* Footer */
+.about-social {
+    width: 100%;
+    padding: 2rem;
+  }
+  
+  .about-social h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .about-social p {
+    font-weight: medium;
+    margin-bottom: 10px;
+  }
+  
+  .media-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .media-icon a {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+    background: #02504a;
+    border-radius: 100%;
+  }
+  
+  .media-icon a:hover {
+    background: white;
+    transform: scale(1.3);
+    transition: 0.3s ease;
+  }
+  
+
+
 /* Responsive Breakpoint */
+@media (max-width: 1080px){
+    header {
+        margin: 0 150px;
+    }
+    section {
+        margin: 0 150px;
+    }
+    .option {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
 @media (max-width: 920px){
+    header {
+        margin: 0 60px;
+    }
+    .icon li a img{
+        height: 60px;
+        margin-top: -15px;
+    }
     section {
         margin: 0 60px;
     }
@@ -147,6 +323,16 @@ section {
     }
 }
 @media (max-width: 576px){
+    header{
+        margin: 0 auto;
+    }
+    .icon li a img{
+        height: 50px;
+        margin-top: -10px;
+    }
+    .list li{
+        margin-left: 10px;
+    }
     section {
         margin: 0 auto;
     }
@@ -157,14 +343,20 @@ section {
     .arab p{
         font-size: 4vw;
     }
+    #contact{
+        padding: 2rem;
+    }
+    .kontak-form{
+        max-width: 720px;
+    }
     .logoSholawat {
       bottom: 20px;
       right: 20px;
-      height: 30px;
-      width: 30px;
+      height: 35px;
+      width: 35px;
     }
     .to-top {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
 }

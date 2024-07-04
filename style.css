@@ -106,6 +106,7 @@ header {
 }
 
 .search-icon {
+  margin-left: 5px;
   height: 30px;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -130,7 +131,7 @@ header {
 .search-container:hover #search-input,
 #search-input:focus,
 #search-input:not(:placeholder-shown) {
-  width: 155px;
+  width: 30vw;
   opacity: 1;
   padding: 5px 10px;
   border: 1px solid #ccc;
@@ -148,7 +149,7 @@ header {
   margin-left: 5px;
   border: 1px solid #ccc;
   max-height: 200px;
-  max-width: 170px;
+  max-width: 40vw;
   overflow-y: auto;
   border-radius: 5px;
 }
@@ -357,9 +358,9 @@ header {
   header {
     margin: 0 150px;
   }
-  .search-container:hover #search-input {
+  /* .search-container:hover #search-input {
     width: 180px;
-  }
+  } */
   section {
     margin: 0 150px;
   }
@@ -376,9 +377,9 @@ header {
     height: 60px;
     margin-top: -15px;
   }
-  .search-container:hover #search-input {
+  /* .search-container:hover #search-input {
     width: 165px;
-  }
+  } */
   section {
     margin: 0 60px;
   }
@@ -398,9 +399,9 @@ header {
   .list li {
     margin-left: 10px;
   }
-  .search-container:hover #search-input {
+  /* .search-container:hover #search-input {
     width: 155px;
-  }
+  } */
   section {
     margin: 0 auto;
   }

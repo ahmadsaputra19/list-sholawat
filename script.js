@@ -59,3 +59,11 @@ document.getElementById("search-input").addEventListener("input", function() {
         }
     }
 });
+
+document.getElementById('search-input').addEventListener('input', function() {
+    if (this.value) {
+        this.classList.add('has-text');
+    } else {
+        this.classList.remove('has-text');
+    }
+});

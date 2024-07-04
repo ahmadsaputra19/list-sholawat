@@ -34,6 +34,11 @@
       <div class="container">
         <div class="hero">
           <div class="logo">
+            <div class="search-container">
+              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            <input type="text" id="search-input" placeholder="Search...">
+            <div id="searchResults" class="search-results"></div>
+            </div>
             <h1>List Sholawat</h1>
           </div>
           <div class="option">
@@ -195,7 +200,7 @@
 
     <section id="sholawat-option">
       <div class="option-btn">
-      <div id="assalamualaik"></div>
+      <div id="assalamualaik" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100" type="button" data-bs-toggle="collapse" data-bs-target="#assalamualaik" aria-expanded="false" aria-controls="#assalamualaik">ASSALAMU'ALAIK</button>
       <div class="collapse" id="assalamualaik">
         <div class="card card-body">
@@ -221,7 +226,7 @@
         </div>
       </div>
 
-      <div id="assalamualaika"></div>
+      <div id="assalamualaika" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#assalamualaika" aria-expanded="false" aria-controls="#assalamualaika">ASSALAMU'ALAIKA AHMADUYA</button>
       <div class="collapse" id="assalamualaika">
         <div class="card card-body">
@@ -240,7 +245,7 @@
         </div>
       </div>
 
-      <div id="abalqosim"></div>
+      <div id="abalqosim" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#abalqosim" aria-expanded="false" aria-controls="#abalqosim">ABAL QOSIM</button>
       <div class="collapse" id="abalqosim">
         <div class="card card-body">
@@ -260,7 +265,7 @@
         </div>
       </div>
 
-      <div id="ahbabrosulillah"></div>
+      <div id="ahbabrosulillah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ahbabrosulillah" aria-expanded="false" aria-controls="#ahbabrosulillah">AHBAB ROSULILLAH</button>
       <div class="collapse" id="ahbabrosulillah">
         <div class="card card-body">
@@ -286,7 +291,7 @@
         </div>
       </div>
 
-      <div id="ahmadulmusthofa"></div>
+      <div id="ahmadulmusthofa" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ahmadulmusthofa" aria-expanded="false" aria-controls="#ahmadulmusthofa">AHMADUL MUSTHOFA</button>
       <div class="collapse" id="ahmadulmusthofa">
         <div class="card card-body">
@@ -305,7 +310,7 @@
         </div>
       </div>
 
-      <div id="ahmadyanurulhuda"></div>
+      <div id="ahmadyanurulhuda" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ahmadyanurulhuda" aria-expanded="false" aria-controls="#ahmadyanurulhuda">AHMAD YA NURUL HUDA</button>
       <div class="collapse" id="ahmadyanurulhuda">
         <div class="card card-body">
@@ -326,7 +331,7 @@
         </div>
       </div>
       
-      <div id="ajmaladzikro"></div>
+      <div id="ajmaladzikro" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ajmaladzikro" aria-expanded="false" aria-controls="#ajmaladzikro">AJMALA DZIKRO</button>
       <div class="collapse" id="ajmaladzikro">
         <div class="card card-body">
@@ -346,7 +351,7 @@
         </div>
       </div>
 
-      <div id="allahallahu"></div>
+      <div id="allahallahu" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#allahallahu" aria-expanded="false" aria-controls="#allahallahu">ALLAH ALLAHU</button>
       <div class="collapse" id="allahallahu">
         <div class="card card-body">
@@ -368,7 +373,7 @@
         </div>
       </div>
 
-      <div id="antassalam"></div>
+      <div id="antassalam" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#antassalam" aria-expanded="false" aria-controls="#antassalam">ALLAHUMMA ANTASSALAM</button>
       <div class="collapse" id="antassalam">
         <div class="card card-body">
@@ -388,7 +393,7 @@
         </div>
       </div>
 
-      <div id="almadad"></div>
+      <div id="almadad" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#almadad" aria-expanded="false" aria-controls="#almadad">ALMADAD YA ROSULALLAH</button>
       <div class="collapse" id="almadad">
         <div class="card card-body">
@@ -415,7 +420,7 @@
         </div>
       </div>
 
-      <div id="alqolbumutayyam"></div>
+      <div id="alqolbumutayyam" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#alqolbumutayyam" aria-expanded="false" aria-controls="#alqolbumutayyam">ALQOLBU MUTAYYAM</button>
       <div class="collapse" id="alqolbumutayyam">
         <div class="card card-body">
@@ -433,7 +438,7 @@
         </div>
       </div>
 
-      <div id="alaqlu"></div>
+      <div id="alaqlu" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#alaqlu" aria-expanded="false" aria-controls="#alaqlu">AL AQLU</button>
       <div class="collapse" id="alaqlu">
         <div class="card card-body">
@@ -455,7 +460,7 @@
         </div>
       </div>
 
-      <div id="alhijrotu"></div>
+      <div id="alhijrotu" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#alhijrotu" aria-expanded="false" aria-controls="#alhijrotu">AL HIJROTU</button>
       <div class="collapse" id="alhijrotu">
         <div class="card card-body">
@@ -473,7 +478,7 @@
         </div>
       </div>
 
-      <div id="almurottilu"></div>
+      <div id="almurottilu" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#almurottilu" aria-expanded="false" aria-controls="#almurottilu">ALMUROTTILU</button>
       <div class="collapse" id="almurottilu">
         <div class="card card-body">
@@ -491,7 +496,7 @@
         </div>
       </div>
 
-      <div id="amutuwaahya"></div>
+      <div id="amutuwaahya" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#amutuwaahya" aria-expanded="false" aria-controls="#amutuwaahya">AMUTU WAAHYA</button>
       <div class="collapse" id="amutuwaahya">
         <div class="card card-body">
@@ -508,7 +513,7 @@
         </div>
       </div>
 
-      <div id="anamadihulmukhtar"></div>
+      <div id="anamadihulmukhtar" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#anamadihulmukhtar" aria-expanded="false" aria-controls="#anamadihulmukhtar">ANA MADIHUL MUKHTAR</button>
       <div class="collapse" id="anamadihulmukhtar">
         <div class="card card-body">
@@ -524,7 +529,7 @@
         </div>
       </div>
 
-      <div id="annabishollualaih"></div>
+      <div id="annabishollualaih" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#annabishollualaih" aria-expanded="false" aria-controls="#annabishollualaih">ANNABI SHOLLUALAIH</button>
       <div class="collapse" id="annabishollualaih">
         <div class="card card-body">
@@ -546,7 +551,7 @@
         </div>
       </div>
 
-      <div id="annalislam"></div>
+      <div id="annalislam" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#annalislam" aria-expanded="false" aria-controls="#annalislam">ANNAL ISLAMU ADDABANI</button>
       <div class="collapse" id="annalislam">
         <div class="card card-body">
@@ -567,7 +572,7 @@
         </div>
       </div>
 
-      <div id="antalhana"></div>
+      <div id="antalhana" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#antalhana" aria-expanded="false" aria-controls="#antalhana">ANTAL HANA</button>
       <div class="collapse" id="antalhana">
         <div class="card card-body">
@@ -585,7 +590,7 @@
         </div>
       </div>
 
-      <div id="antaqomaruna"></div>
+      <div id="antaqomaruna" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#antaqomaruna" aria-expanded="false" aria-controls="#antaqomaruna">ANTA QOMARUNA</button>
       <div class="collapse" id="antaqomaruna">
         <div class="card card-body">
@@ -625,7 +630,7 @@
         </div>
       </div>
 
-      <div id="arofalkaunu"></div>
+      <div id="arofalkaunu" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#arofalkaunu" aria-expanded="false" aria-controls="#arofalkaunu">AROFAL KAUNU SALAMA</button>
       <div class="collapse" id="arofalkaunu">
         <div class="card card-body">
@@ -645,7 +650,7 @@
         </div>
       </div>
 
-      <div id="asmanewalisongo"></div>
+      <div id="asmanewalisongo" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#asmanewalisongo" aria-expanded="false" aria-controls="#asmanewalisongo">ASMANE WALISONGO</button>
       <div class="collapse" id="asmanewalisongo">
         <div class="card card-body">
@@ -665,7 +670,7 @@
         </div>
       </div>
 
-      <div id="assubhubada"></div>
+      <div id="assubhubada" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#assubhubada" aria-expanded="false" aria-controls="#assubhubada">ASSUBHUBADA</button>
       <div class="collapse" id="assubhubada">
         <div class="card card-body">
@@ -685,7 +690,7 @@
         </div>
       </div>
 
-      <div id="asyroqol"></div>
+      <div id="asyroqol" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#asyroqol" aria-expanded="false" aria-controls="#asyroqol">ASYROQOL BADRU ALAINA</button>
       <div class="collapse" id="asyroqol">
         <div class="card card-body">
@@ -703,7 +708,7 @@
         </div>
       </div>
 
-      <div id="atainaka"></div>
+      <div id="atainaka" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#atainaka" aria-expanded="false" aria-controls="#atainaka">ATAINAKA BIL FAQRI</button>
       <div class="collapse" id="atainaka">
         <div class="card card-body">
@@ -724,7 +729,7 @@
         </div>
       </div>
 
-      <div id="athoitanayarobbi"></div>
+      <div id="athoitanayarobbi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#athoitanayarobbi" aria-expanded="false" aria-controls="#athoitanayarobbi">ATHOITANA YA ROBBI</button>
       <div class="collapse" id="athoitanayarobbi">
         <div class="card card-body">
@@ -743,7 +748,7 @@
         </div>
       </div>
 
-      <div id="ayyudzikro"></div>
+      <div id="ayyudzikro" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ayyudzikro" aria-expanded="false" aria-controls="#ayyudzikro">AYYUDZIKRO</button>
       <div class="collapse" id="ayyudzikro">
         <div class="card card-body">
@@ -761,7 +766,7 @@
         </div>
       </div>
 
-      <div id="ayyushoutin"></div>
+      <div id="ayyushoutin" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ayyushoutin" aria-expanded="false" aria-controls="#ayyushoutin">AYYUSHOUTIN</button>
       <div class="collapse" id="ayyushoutin">
         <div class="card card-body">
@@ -787,7 +792,7 @@
         </div>
       </div>
 
-      <div id="bahebbak"></div>
+      <div id="bahebbak" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#bahebbak" aria-expanded="false" aria-controls="#bahebbak">BAHEBBAK</button>
       <div class="collapse" id="bahebbak">
         <div class="card card-body">
@@ -813,7 +818,7 @@
         </div>
       </div>
 
-      <div id="biladunhabahallah"></div>
+      <div id="biladunhabahallah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#biladunhabahallah" aria-expanded="false" aria-controls="#biladunhabahallah">BILADUN HABAHALLAH</button>
       <div class="collapse" id="biladunhabahallah">
         <div class="card card-body">
@@ -828,7 +833,7 @@
         </div>
       </div>
 
-      <div id="billahikhudzlibiyadi"></div>
+      <div id="billahikhudzlibiyadi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#billahikhudzlibiyadi" aria-expanded="false" aria-controls="#billahikhudzlibiyadi">
         BILLAHI KHUDZLIBIYADI
       </button>
@@ -853,7 +858,7 @@
         </div>
       </div>
 
-      <div id="bilqurani"></div>
+      <div id="bilqurani" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#bilqurani" aria-expanded="false" aria-controls="#bilqurani">BIL QUR'ANI SA'AMDI</button>
       <div class="collapse" id="bilqurani">
         <div class="card card-body">
@@ -873,7 +878,7 @@
         </div>
       </div>
 
-      <div id="birosulillahiwalbadawi"></div>
+      <div id="birosulillahiwalbadawi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#birosulillahiwalbadawi" aria-expanded="false" aria-controls="#birosulillahiwalbadawi">
         BIROSULILLAHI WALBADAWI
       </button>
@@ -901,7 +906,7 @@
         </div>
       </div>
 
-      <div id="busyrolana"></div>
+      <div id="busyrolana" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#busyrolana" aria-expanded="false" aria-controls="#busyrolana">BUSYROLANA</button>
       <div class="collapse" id="busyrolana">
         <div class="card card-body">
@@ -923,7 +928,7 @@
         </div>
       </div>
 
-      <div id="dauni"></div>
+      <div id="dauni" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#dauni" aria-expanded="false" aria-controls="#dauni">DA'UNI UNAJI HABIBI</button>
       <div class="collapse" id="dauni">
         <div class="card card-body">
@@ -942,7 +947,7 @@
         </div>
       </div>
 
-      <div id="dinunaya"></div>
+      <div id="dinunaya" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#dinunaya" aria-expanded="false" aria-controls="#dinunaya">DINUNAYA</button>
       <div class="collapse" id="dinunaya">
         <div class="card card-body">
@@ -960,7 +965,7 @@
         </div>
       </div>
 
-      <div id="fayaayyuharroju"></div>
+      <div id="fayaayyuharroju" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#fayaayyuharroju" aria-expanded="false" aria-controls="#fayaayyuharroju">FAYA AYYUHARROJU</button>
       <div class="collapse" id="fayaayyuharroju">
         <div class="card card-body">
@@ -980,7 +985,7 @@
         </div>
       </div>
 
-      <div id="ghorrid"></div>
+      <div id="ghorrid" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ghorrid" aria-expanded="false" aria-controls="#ghorrid">GHORRID YA SYIBLAL IMAN</button>
       <div class="collapse" id="ghorrid">
         <div class="card card-body">
@@ -1002,7 +1007,7 @@
         </div>
       </div>
 
-      <div id="ghurroba"></div>
+      <div id="ghurroba" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ghurroba" aria-expanded="false" aria-controls="#ghurroba">GHURROBA'</button>
       <div class="collapse" id="ghurroba">
         <div class="card card-body">
@@ -1028,7 +1033,7 @@
         </div>
       </div>
 
-      <div id="habibiyamuhammad"></div>
+      <div id="habibiyamuhammad" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#habibiyamuhammad" aria-expanded="false" aria-controls="#habibiyamuhammad">HABIBI YA MUHAMMAD</button>
       <div class="collapse" id="habibiyamuhammad">
         <div class="card card-body">
@@ -1046,7 +1051,7 @@
         </div>
       </div>
 
-      <div id="hadzarosulallah"></div>
+      <div id="hadzarosulallah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#hadzarosulallah" aria-expanded="false" aria-controls="#hadzarosulallah">HADZA ROSULALLAH</button>
       <div class="collapse" id="hadzarosulallah">
         <div class="card card-body">
@@ -1068,7 +1073,7 @@
         </div>
       </div>
 
-      <div id="alabali"></div>
+      <div id="alabali" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#alabali" aria-expanded="false" aria-controls="#alabali">HAGA MESTAKHEBEYA X 'ALA BALI</button>
       <div class="collapse" id="alabali">
         <div class="card card-body">
@@ -1090,7 +1095,7 @@
         </div>
       </div>
 
-      <div id="hubbuahmadi"></div>
+      <div id="hubbuahmadi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#hubbuahmadi" aria-expanded="false" aria-controls="#hubbuahmadi">HUBBU AHMADI</button>
       <div class="collapse" id="hubbuahmadi">
         <div class="card card-body">
@@ -1112,7 +1117,7 @@
         </div>
       </div>
 
-      <div id="hubbunnabi"></div>
+      <div id="hubbunnabi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#hubbunnabi" aria-expanded="false" aria-controls="#hubbunnabi">HUBBUN NABI</button>
       <div class="collapse" id="hubbunnabi">
         <div class="card card-body">
@@ -1136,7 +1141,7 @@
         </div>
       </div>
 
-      <div id="huwaindah"></div>
+      <div id="huwaindah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#huwaindah" aria-expanded="false" aria-controls="#huwaindah">HUWA INDAH</button>
       <div class="collapse" id="huwaindah">
         <div class="card card-body">
@@ -1157,7 +1162,7 @@
         </div>
       </div>
 
-      <div id="huwannur"></div>
+      <div id="huwannur" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#huwannur" aria-expanded="false" aria-controls="#huwannur">HUWANNUR</button>
       <div class="collapse" id="huwannur">
         <div class="card card-body">
@@ -1192,7 +1197,7 @@
         </div>
       </div>
 
-      <div id="ibadallah"></div>
+      <div id="ibadallah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ibadallah" aria-expanded="false" aria-controls="#ibadallah">IBADALLAH X DO'A RAJAB</button>
       <div class="collapse" id="ibadallah">
         <div class="card card-body">
@@ -1218,7 +1223,7 @@
         </div>
       </div>
 
-      <div id="ilahurrohman"></div>
+      <div id="ilahurrohman" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ilahurrohman" aria-expanded="false" aria-controls="#ilahurrohman">ILAHURROHMAN</button>
       <div class="collapse" id="ilahurrohman">
         <div class="card card-body">
@@ -1243,7 +1248,7 @@
         </div>
       </div>
 
-      <div id="ilarosulallah"></div>
+      <div id="ilarosulallah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ilarosulallah" aria-expanded="false" aria-controls="#ilarosulallah">ILA ROSULALLAH</button>
       <div class="collapse" id="ilarosulallah">
         <div class="card card-body">
@@ -1268,7 +1273,7 @@
         </div>
       </div>
 
-      <div id="jadalhusain"></div>
+      <div id="jadalhusain" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#jaddalhusain" aria-expanded="false" aria-controls="#jaddalhusain">JADDAL HUSAIN</button>
       <div class="collapse" id="jaddalhusain">
         <div class="card card-body">
@@ -1287,7 +1292,7 @@
         </div>
       </div>
 
-      <div id="jinadunya"></div>
+      <div id="jinadunya" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#jinadunya" aria-expanded="false" aria-controls="#jinadunya">JINA DUNYA</button>
       <div class="collapse" id="jinadunya">
         <div class="card card-body">
@@ -1309,7 +1314,7 @@
         </div>
       </div>
 
-      <div id="jinawajina"></div>
+      <div id="jinawajina" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#jinawajina" aria-expanded="false" aria-controls="#jinawajina">JINA WAJINA</button>
       <div class="collapse" id="jinawajina">
         <div class="card card-body">
@@ -1329,7 +1334,7 @@
         </div>
       </div>
 
-      <div id="jokotingkir"></div>
+      <div id="jokotingkir" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#jokotingkir" aria-expanded="false" aria-controls="#jokotingkir">JOKO TINGKIR WALI JOWO</button>
       <div class="collapse" id="jokotingkir">
         <div class="card card-body">
@@ -1352,7 +1357,7 @@
         </div>
       </div>
 
-      <div id="kalamunqodim"></div>
+      <div id="kalamunqodim" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#kalamunqodim" aria-expanded="false" aria-controls="#kalamunqodim">KALAMUN QODIM</button>
       <div class="collapse" id="kalamunqodim">
         <div class="card card-body">
@@ -1368,7 +1373,7 @@
         </div>
       </div>
 
-      <div id="kekasihkita"></div>
+      <div id="kekasihkita" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#kekasihkita" aria-expanded="false" aria-controls="#kekasihkita">KEKASIH KITA NABI MUHAMMAD</button>
       <div class="collapse" id="kekasihkita">
         <div class="card card-body">
@@ -1403,7 +1408,7 @@
         </div>
       </div>
 
-      <div id="khobbiri"></div>
+      <div id="khobbiri" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#khobbiri" aria-expanded="false" aria-controls="#khobbiri">KHOBBIRI</button>
       <div class="collapse" id="khobbiri">
         <div class="card card-body">
@@ -1421,7 +1426,7 @@
         </div>
       </div>
 
-      <div id="khoirolbariyyah"></div>
+      <div id="khoirolbariyyah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#khoirolbariyyah" aria-expanded="false" aria-controls="#khoirolbariyyah">KHOIROL BARIYYAH</button>
       <div class="collapse" id="khoirolbariyyah">
         <div class="card card-body">
@@ -1442,7 +1447,7 @@
         </div>
       </div>
 
-      <div id="khudzuni"></div>
+      <div id="khudzuni" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#khudzuni" aria-expanded="false" aria-controls="#khudzuni">KHUDZUNI</button>
       <div class="collapse" id="khudzuni">
         <div class="card card-body">
@@ -1459,7 +1464,7 @@
         </div>
       </div>
 
-      <div id="kululkulub"></div>
+      <div id="kululkulub" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#kululkulub" aria-expanded="false" aria-controls="#kululkulub">KULLUL QULUB</button>
       <div class="collapse" id="kululkulub">
         <div class="card card-body">
@@ -1474,7 +1479,7 @@
         </div>
       </div>
 
-      <div id="lailaalayya"></div>
+      <div id="lailaalayya" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#lailaalayya" aria-expanded="false" aria-controls="#lailaalayya">LAILA ALAYYA</button>
       <div class="collapse" id="lailaalayya">
         <div class="card card-body">
@@ -1506,7 +1511,7 @@
         </div>
       </div>
 
-      <div id="lailansaro"></div>
+      <div id="lailansaro" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#lailansaro" aria-expanded="false" aria-controls="#lailansaro">LAILAN SARO</button>
       <div class="collapse" id="lailansaro">
         <div class="card card-body">
@@ -1526,7 +1531,7 @@
         </div>
       </div>
 
-      <div id="laisafi"></div>
+      <div id="laisafi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#laisafi" aria-expanded="false" aria-controls="#laisafi">LAISAFI</button>
       <div class="collapse" id="laisafi">
         <div class="card card-body">
@@ -1545,7 +1550,7 @@
         </div>
       </div>
 
-      <div id="laukana"></div>
+      <div id="laukana" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#laukana" aria-expanded="false" aria-controls="#laukana">LAUKANA BAINANAL HABIB</button>
       <div class="collapse" id="laukana">
         <div class="card card-body">
@@ -1567,7 +1572,7 @@
         </div>
       </div>
 
-      <div id="madaihuna"></div>
+      <div id="madaihuna" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#madaihuna" aria-expanded="false" aria-controls="#madaihuna">MADAIHUNA</button>
       <div class="collapse" id="madaihuna">
         <div class="card card-body">
@@ -1601,7 +1606,7 @@
         </div>
       </div>
 
-      <div id="mamada"></div>
+      <div id="mamada" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#mamada" aria-expanded="false" aria-controls="#mamada">MAMADDA</button>
       <div class="collapse" id="mamada">
         <div class="card card-body">
@@ -1627,7 +1632,7 @@
         </div>
       </div>
 
-      <div id="masyamamtu"></div>
+      <div id="masyamamtu" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#masyamamtu" aria-expanded="false" aria-controls="#masyamamtu">MA SYAMAMTU WARDA ILLA</button>
       <div class="collapse" id="masyamamtu">
         <div class="card card-body">
@@ -1647,7 +1652,7 @@
         </div>
       </div>
 
-      <div id="mughrom"></div>
+      <div id="mughrom" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#mughrom" aria-expanded="false" aria-controls="#mughrom">MUGHROM</button>
       <div class="collapse" id="mughrom">
         <div class="card card-body">
@@ -1669,7 +1674,7 @@
         </div>
       </div>
 
-      <div id="muhammadnabina"></div>
+      <div id="muhammadnabina" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#muhammadnabina" aria-expanded="false" aria-controls="#muhammadnabina">MUHAMMAD NABINA</button>
       <div class="collapse" id="muhammadnabina">
         <div class="card card-body">
@@ -1698,7 +1703,7 @@
         </div>
       </div>
 
-      <div id="muhammadnabinabanjari"></div>
+      <div id="muhammadnabinabanjari" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#muhammadnabinabanjari" aria-expanded="false" aria-controls="#muhammadnabinabanjari">MUHAMMAD NABINA (BANJARI)</button>
       <div class="collapse" id="muhammadnabinabanjari">
         <div class="card card-body">
@@ -1724,7 +1729,7 @@
         </div>
       </div>
 
-      <div id="nasabenabi"></div>
+      <div id="nasabenabi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#nasabenabi" aria-expanded="false" aria-controls="#nasabenabi">NASABE KANJENG NABI</button>
       <div class="collapse" id="nasabenabi">
         <div class="card card-body">
@@ -1760,7 +1765,7 @@
         </div>
       </div>
 
-      <div id="nasamatuhawak"></div>
+      <div id="nasamatuhawak" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#nasamatuhawak" aria-expanded="false" aria-controls="#nasamatuhawak">NASAMATUHAWAK</button>
       <div class="collapse" id="nasamatuhawak">
         <div class="card card-body">
@@ -1785,7 +1790,7 @@
         </div>
       </div>
 
-      <div id="nurulhudawalhaq"></div>
+      <div id="nurulhudawalhaq" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#nurulhudawalhaq" aria-expanded="false" aria-controls="#nurulhudawalhaq">NURUL HUDA WAL HAQ</button>
       <div class="collapse" id="nurulhudawalhaq">
         <div class="card card-body">
@@ -1801,7 +1806,7 @@
         </div>
       </div>
 
-      <div id="nurulmusthofa"></div>
+      <div id="nurulmusthofa" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#nurulmusthofa" aria-expanded="false" aria-controls="#nurulmusthofa">NURUL MUSTHOFA</button>
       <div class="collapse" id="nurulmusthofa">
         <div class="card card-body">
@@ -1825,7 +1830,7 @@
         </div>
       </div>
 
-      <div id="nurunhalla"></div>
+      <div id="nurunhalla" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#nurunhalla" aria-expanded="false" aria-controls="#nurunhalla">NURUN HALLA</button>
       <div class="collapse" id="nurunhalla">
         <div class="card card-body">
@@ -1847,7 +1852,7 @@
         </div>
       </div>
 
-      <div id="pepaliki"></div>
+      <div id="pepaliki" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#pepaliki" aria-expanded="false" aria-controls="#pepaliki">PEPALIKI AGENG SELO</button>
       <div class="collapse" id="pepaliki">
         <div class="card card-body">
@@ -1908,7 +1913,7 @@
         </div>
       </div>
 
-      <div id="qodkaffani"></div>
+      <div id="qodkaffani" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#qodkaffani" aria-expanded="false" aria-controls="#qodkaffani">QOD KAFFANI</button>
       <div class="collapse" id="qodkaffani">
         <div class="card card-body">
@@ -1932,7 +1937,7 @@
         </div>
       </div>
 
-      <div id="qomadai"></div>
+      <div id="qomadai" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#qomadai" aria-expanded="false" aria-controls="#qomadai">QOMADA'I</button>
       <div class="collapse" id="qomadai">
         <div class="card card-body">
@@ -1952,7 +1957,7 @@
         </div>
       </div>
 
-      <div id="qomarun"></div>
+      <div id="qomarun" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#qomarun" aria-expanded="false" aria-controls="#qomarun">QOMARUN</button>
       <div class="collapse" id="qomarun">
         <div class="card card-body">
@@ -1972,7 +1977,7 @@
         </div>
       </div>
 
-      <div id="robbahuinnamunaya"></div>
+      <div id="robbahuinnamunaya" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#robbahuinnamunaya" aria-expanded="false" aria-controls="#robbahuinnamunaya">ROBBAHU INNA MUNAYA</button>
       <div class="collapse" id="robbahuinnamunaya">
         <div class="card card-body">
@@ -1992,7 +1997,7 @@
         </div>
       </div>
 
-      <div id="robbahubidzikri"></div>
+      <div id="robbahubidzikri" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#robbahubidzikri" aria-expanded="false" aria-controls="#robbahubidzikri">ROBBAHU BIDZIKRI</button>
       <div class="collapse" id="robbahubidzikri">
         <div class="card card-body">
@@ -2012,7 +2017,7 @@
         </div>
       </div>
 
-      <div id="robbifajal"></div>
+      <div id="robbifajal" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#robbifajal" aria-expanded="false" aria-controls="#robbifajal">ROBBI FAJ'AL MUJTAMA'NA</button>
       <div class="collapse" id="robbifajal">
         <div class="card card-body">
@@ -2036,7 +2041,7 @@
         </div>
       </div>
 
-      <div id="robbilahul"></div>
+      <div id="robbilahul" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#robbilahul" aria-expanded="false" aria-controls="#robbilahul">ROBBI LAHUL ASMA UL HUSNA</button>
       <div class="collapse" id="robbilahul">
         <div class="card card-body">
@@ -2054,7 +2059,7 @@
         </div>
       </div>
 
-      <div id="robbisallimna"></div>
+      <div id="robbisallimna" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#robbisallimna" aria-expanded="false" aria-controls="#robbisallimna">ROBBI SALLIMNA</button>
       <div class="collapse" id="robbisallimna">
         <div class="card card-body">
@@ -2072,7 +2077,7 @@
         </div>
       </div>
 
-      <div id="rodhina"></div>
+      <div id="rodhina" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#rodhina" aria-expanded="false" aria-controls="#rodhina">RODHINA YA BANIZZAHRO</button>
       <div class="collapse" id="rodhina">
         <div class="card card-body">
@@ -2095,7 +2100,7 @@
         </div>
       </div>
 
-      <div id="layurdzik"></div>
+      <div id="layurdzik" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#layurdzik" aria-expanded="false" aria-controls="#layurdzik">ROSULULLAH LAA YURDZIK</button>
       <div class="collapse" id="layurdzik">
         <div class="card card-body">
@@ -2115,7 +2120,7 @@
         </div>
       </div>
 
-      <div id="salamanyaumarfaruq"></div>
+      <div id="salamanyaumarfaruq" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#salamanyaumarfaruq" aria-expanded="false" aria-controls="#salamanyaumarfaruq">SALAMAN YA UMAR FARUQ</button>
       <div class="collapse" id="salamanyaumarfaruq">
         <div class="card card-body">
@@ -2139,7 +2144,7 @@
         </div>
       </div>
 
-      <div id="salamun"></div>
+      <div id="salamun" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#salamun" aria-expanded="false" aria-controls="#salamun">SALAMUN SALAMUN</button>
       <div class="collapse" id="salamun">
         <div class="card card-body">
@@ -2167,7 +2172,7 @@
         </div>
       </div>
 
-      <div id="shilyanabi"></div>
+      <div id="shilyanabi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#shilyanabi" aria-expanded="false" aria-controls="#shilyanabi">SHIL YA NABI</button>
       <div class="collapse" id="shilyanabi">
         <div class="card card-body">
@@ -2192,7 +2197,7 @@
         </div>
       </div>
 
-      <div id="nalikosiro"></div>
+      <div id="nalikosiro" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#nalikosiro" aria-expanded="false" aria-controls="#nalikosiro">SHOLATULLAH X NALIKO SIRO</button>
       <div class="collapse" id="nalikosiro">
         <div class="card card-body">
@@ -2237,7 +2242,7 @@
         </div>
       </div>
 
-      <div id="tohalyamani"></div>
+      <div id="tohalyamani" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#tohalyamani" aria-expanded="false" aria-controls="#tohalyamani">SHOLATULLAH ALA TOHAL YAMANI</button>
       <div class="collapse" id="tohalyamani">
         <div class="card card-body">
@@ -2266,7 +2271,7 @@
         </div>
       </div>
 
-      <div id="sholatullahimalahat"></div>
+      <div id="sholatullahimalahat" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#sholatullahimalahat" aria-expanded="false" aria-controls="#sholatullahimalahat">SHOLATULLAHIMA LAHAT KAWAKIB</button>
       <div class="collapse" id="sholatullahimalahat">
         <div class="card card-body">
@@ -2295,7 +2300,7 @@
         </div>
       </div>
 
-      <div id="sholatun"></div>
+      <div id="sholatun" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#sholatun" aria-expanded="false" aria-controls="#sholatun">SHOLATUN</button>
       <div class="collapse" id="sholatun">
         <div class="card card-body">
@@ -2313,7 +2318,7 @@
         </div>
       </div>
 
-      <div id="sholatunsalam"></div>
+      <div id="sholatunsalam" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#sholatunsalam" aria-expanded="false" aria-controls="#sholatunsalam">SHOLATUN SALAM</button>
       <div class="collapse" id="sholatunsalam">
         <div class="card card-body">
@@ -2331,7 +2336,7 @@
         </div>
       </div>
 
-      <div id="asnawiyyah"></div>
+      <div id="asnawiyyah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#asnawiyyah" aria-expanded="false" aria-controls="#asnawiyyah">SHOLAWAT ASNAWIYYAH</button>
       <div class="collapse" id="asnawiyyah">
         <div class="card card-body">
@@ -2351,7 +2356,7 @@
         </div>
       </div>
 
-      <div id="badar"></div>
+      <div id="badar" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#badar" aria-expanded="false" aria-controls="#badar">SHOLAWAT BADAR</button>
       <div class="collapse" id="badar">
         <div class="card card-body">
@@ -2391,7 +2396,7 @@
         </div>
       </div>
 
-      <div id="lilhusulilmarom"></div>
+      <div id="lilhusulilmarom" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#lilhusulilmarom" aria-expanded="false" aria-controls="#lilhusulilmarom">SHOLAWAT LIL HUSULIL MAROM</button>
       <div class="collapse" id="lilhusulilmarom">
         <div class="card card-body">
@@ -2433,7 +2438,7 @@
         </div>
       </div>
 
-      <div id="nahdliyah"></div>
+      <div id="nahdliyah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#nahdliyah" aria-expanded="false" aria-controls="#nahdliyah">SHOLAWAT NAHDLIYAH</button>
       <div class="collapse" id="nahdliyah">
         <div class="card card-body">
@@ -2456,7 +2461,7 @@
         </div>
       </div>
 
-      <div id="sholawatullahitaghsya"></div>
+      <div id="sholawatullahitaghsya" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#sholawatullahitaghsya" aria-expanded="false" aria-controls="#sholawatullahitaghsya">
         SHOLAWATULLAHI TAGHSYA
       </button>
@@ -2492,7 +2497,7 @@
         </div>
       </div>
 
-      <div id="alayasin"></div>
+      <div id="alayasin" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#alayasin" aria-expanded="false" aria-controls="#alayasin">SHOLLALLAHU ALA YASIN</button>
       <div class="collapse" id="alayasin">
         <div class="card card-body">
@@ -2510,7 +2515,7 @@
         </div>
       </div>
 
-      <div id="nabiyangmulia"></div>
+      <div id="nabiyangmulia" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#nabiyangmulia" aria-expanded="false" aria-controls="#nabiyangmulia">SHOLLALLAHUWASALLAMA X NABI YANG MULIA</button>
       <div class="collapse" id="nabiyangmulia">
         <div class="card card-body">
@@ -2542,7 +2547,7 @@
         </div>
       </div>
 
-      <div id="alanurilladzi"></div>
+      <div id="alanurilladzi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#alanurilladzi" aria-expanded="false" aria-controls="#alanurilladzi">SHOLLU ALAN NURILLADZI</button>
       <div class="collapse" id="alanurilladzi">
         <div class="card card-body">
@@ -2567,7 +2572,7 @@
         </div>
       </div>
 
-      <div id="sifatemurid"></div>
+      <div id="sifatemurid" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#sifatemurid" aria-expanded="false" aria-controls="#sifatemurid">SIFATE MURID</button>
       <div class="collapse" id="sifatemurid">
         <div class="card card-body">
@@ -2597,7 +2602,7 @@
         </div>
       </div>
 
-      <div id="syababalila"></div>
+      <div id="syababalila" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#syababalila" aria-expanded="false" aria-controls="#syababalila">SYABABAL ILA</button>
       <div class="collapse" id="syababalila">
         <div class="card card-body">
@@ -2627,7 +2632,7 @@
         </div>
       </div>
 
-      <div id="syahrurrobi"></div>
+      <div id="syahrurrobi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#syahrurrobi" aria-expanded="false" aria-controls="#syahrurrobi">SYAHRURROBI</button>
       <div class="collapse" id="syahrurrobi">
         <div class="card card-body">
@@ -2647,7 +2652,7 @@
         </div>
       </div>
 
-      <div id="tabarakallah"></div>
+      <div id="tabarakallah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#tabarakallah" aria-expanded="false" aria-controls="#tabarakallah">TABARAKALLAH</button>
       <div class="collapse" id="tabarakallah">
         <div class="card card-body">
@@ -2667,7 +2672,7 @@
         </div>
       </div>
 
-      <div id="tasmauni"></div>
+      <div id="tasmauni" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#tasmauni" aria-expanded="false" aria-controls="#tasmauni">TASMA'UNI ROBBAH</button>
       <div class="collapse" id="tasmauni">
         <div class="card card-body">
@@ -2707,7 +2712,7 @@
         </div>
       </div>
 
-      <div id="tholaal"></div>
+      <div id="tholaal" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#tholaal" aria-expanded="false" aria-controls="#tholaal">THOLA'AL BADRU ALAINA</button>
       <div class="collapse" id="tholaal">
         <div class="card card-body">
@@ -2733,7 +2738,7 @@
         </div>
       </div>
 
-      <div id="tohirul"></div>
+      <div id="tohirul" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#tohirul" aria-expanded="false" aria-controls="#tohirul">TOHIRUL QOLBI</button>
       <div class="collapse" id="tohirul">
         <div class="card card-body">
@@ -2755,7 +2760,7 @@
         </div>
       </div>
 
-      <div id="tubi"></div>
+      <div id="tubi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#tubi" aria-expanded="false" aria-controls="#tubi">TUBI</button>
       <div class="collapse" id="tubi">
         <div class="card card-body">
@@ -2775,7 +2780,7 @@
         </div>
       </div>
 
-      <div id="waajmalu"></div>
+      <div id="waajmalu" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#waajmalu" aria-expanded="false" aria-controls="#waajmalu">WA AJMALU MIN KALAM</button>
       <div class="collapse" id="waajmalu">
         <div class="card card-body">
@@ -2789,7 +2794,7 @@
         </div>
       </div>
 
-      <div id="walammaqosats"></div>
+      <div id="walammaqosats" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#walammaqosats" aria-expanded="false" aria-controls="#walammaqosats">WALAMMA QOSATS</button>
       <div class="collapse" id="walammaqosats">
         <div class="card card-body">
@@ -2803,7 +2808,7 @@
         </div>
       </div>
 
-      <div id="wulidalmusyarrof"></div>
+      <div id="wulidalmusyarrof" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#wulidalmusyarrof" aria-expanded="false" aria-controls="#wulidalmusyarrof">WULIDAL MUSYARROF</button>
       <div class="collapse" id="wulidalmusyarrof">
         <div class="card card-body">
@@ -2825,7 +2830,7 @@
         </div>
       </div>
 
-      <div id="yaabazzahro"></div>
+      <div id="yaabazzahro" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yaabazzahro" aria-expanded="false" aria-controls="#yaabazzahro">YA ABAZZAHRO</button>
       <div class="collapse" id="yaabazzahro">
         <div class="card card-body">
@@ -2842,7 +2847,7 @@
         </div>
       </div>
 
-      <div id="yaabidal"></div>
+      <div id="yaabidal" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yaabidal" aria-expanded="false" aria-controls="#yaabidal">YA ABIDAL HAROMAIN</button>
       <div class="collapse" id="yaabidal">
         <div class="card card-body">
@@ -2868,7 +2873,7 @@
         </div>
       </div>
 
-      <div id="yaallahathlubak"></div>
+      <div id="yaallahathlubak" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yaallahathlubak" aria-expanded="false" aria-controls="#yaallahathlubak">YA ALLAH ATHLUBAK</button>
       <div class="collapse" id="yaallahathlubak">
         <div class="card card-body">
@@ -2892,7 +2897,7 @@
         </div>
       </div>
 
-      <div id="yaarhamar"></div>
+      <div id="yaarhamar" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yaarhamar" aria-expanded="false" aria-controls="#yaarhamar">YA ARHAMAR ROKHIMIN</button>
       <div class="collapse" id="yaarhamar">
         <div class="card card-body">
@@ -2914,7 +2919,7 @@
         </div>
       </div>
 
-      <div id="yaasyiqol"></div>
+      <div id="yaasyiqol" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yaasyiqol" aria-expanded="false" aria-controls="#yaasyiqol">YA ASYIQOL MUSTHOFA</button>
       <div class="collapse" id="yaasyiqol">
         <div class="card card-body">
@@ -2932,7 +2937,7 @@
         </div>
       </div>
 
-      <div id="yaayyuhannabi"></div>
+      <div id="yaayyuhannabi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yaayyuhannabi" aria-expanded="false" aria-controls="#yaayyuhannabi">YA AYYUHAN NABI</button>
       <div class="collapse" id="yaayyuhannabi">
         <div class="card card-body">
@@ -2949,7 +2954,7 @@
         </div>
       </div>
 
-      <div id="yahabib"></div>
+      <div id="yahabib" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yahabib" aria-expanded="false" aria-controls="#yahabib">YA HABIB</button>
       <div class="collapse" id="yahabib">
         <div class="card card-body">
@@ -3001,7 +3006,7 @@
         </div>
       </div>
 
-      <div id="yahabibana"></div>
+      <div id="yahabibana" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yahabibana" aria-expanded="false" aria-controls="#yahabibana">YA HABIBANA ALI</button>
       <div class="collapse" id="yahabibana">
         <div class="card card-body">
@@ -3024,7 +3029,7 @@
         </div>
       </div>
 
-      <div id="yahadiyan"></div>
+      <div id="yahadiyan" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yahadiyan" aria-expanded="false" aria-controls="#yahadiyan">YA HADIYAN RUKHBAN</button>
       <div class="collapse" id="yahadiyan">
         <div class="card card-body">
@@ -3046,7 +3051,7 @@
         </div>
       </div>
 
-      <div id="yahannan"></div>
+      <div id="yahannan" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yahannan" aria-expanded="false" aria-controls="#yahannan">YA HANNAN YA MANNAN</button>
       <div class="collapse" id="yahannan">
         <div class="card card-body">
@@ -3068,7 +3073,7 @@
         </div>
       </div>
 
-      <div id="yahujrotan"></div>
+      <div id="yahujrotan" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yahujrotan" aria-expanded="false" aria-controls="#yahujrotan">YA HUJROTAN</button>
       <div class="collapse" id="yahujrotan">
         <div class="card card-body">
@@ -3088,7 +3093,7 @@
         </div>
       </div>
 
-      <div id="yailahal"></div>
+      <div id="yailahal" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yailahal" aria-expanded="false" aria-controls="#yailahal">YA ILAHAL KHOLQI</button>
       <div class="collapse" id="yailahal">
         <div class="card card-body">
@@ -3111,7 +3116,7 @@
         </div>
       </div>
 
-      <div id="yaimamarrusli"></div>
+      <div id="yaimamarrusli" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yaimamarrusli" aria-expanded="false" aria-controls="#yaimamarrusli">YA IMAMARRUSLI</button>
       <div class="collapse" id="yaimamarrusli">
         <div class="card card-body">
@@ -3133,7 +3138,7 @@
         </div>
       </div>
 
-      <div id="yakitabal"></div>
+      <div id="yakitabal" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yakitabal" aria-expanded="false" aria-controls="#yakitabal">YA KITABAL GHUYUB</button>
       <div class="collapse" id="yakitabal">
         <div class="card card-body">
@@ -3165,7 +3170,7 @@
         </div>
       </div>
 
-      <div id="yakhoiromanja"></div>
+      <div id="yakhoiromanja" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yakhoiromanja" aria-expanded="false" aria-controls="#yakhoiromanja">YA KHOIRO MANJA</button>
       <div class="collapse" id="yakhoiromanja">
         <div class="card card-body">
@@ -3183,7 +3188,7 @@
         </div>
       </div>
 
-      <div id="yakhoiromaulud"></div>
+      <div id="yakhoiromaulud" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yakhoiromaulud" aria-expanded="false" aria-controls="#yakhoiromaulud">YA KHOIRO MAULUD</button>
       <div class="collapse" id="yakhoiromaulud">
         <div class="card card-body">
@@ -3201,7 +3206,7 @@
         </div>
       </div>
 
-      <div id="yalaqolbin"></div>
+      <div id="yalaqolbin" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yalaqolbin" aria-expanded="false" aria-controls="#yalaqolbin">YA LAQOLBIN</button>
       <div class="collapse" id="yalaqolbin">
         <div class="card card-body">
@@ -3218,7 +3223,7 @@
         </div>
       </div>
 
-      <div id="yamadihan"></div>
+      <div id="yamadihan" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yamadihan" aria-expanded="false" aria-controls="#yamadihan">YA MADIHAN</button>
       <div class="collapse" id="yamadihan">
         <div class="card card-body">
@@ -3234,7 +3239,7 @@
         </div>
       </div>
 
-      <div id="yamakatal"></div>
+      <div id="yamakatal" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yamakatal" aria-expanded="false" aria-controls="#yamakatal">YA MAKKATAL ASYROFI</button>
       <div class="collapse" id="yamakatal">
         <div class="card card-body">
@@ -3253,7 +3258,7 @@
         </div>
       </div>
 
-      <div id="yamuhaiminu"></div>
+      <div id="yamuhaiminu" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yamuhaiminu" aria-expanded="false" aria-controls="#yamuhaiminu">YA MUHAIMINU YASALAM</button>
       <div class="collapse" id="yamuhaiminu">
         <div class="card card-body">
@@ -3271,7 +3276,7 @@
         </div>
       </div>
 
-      <div id="yamusthofa"></div>
+      <div id="yamusthofa" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yamusthofa" aria-expanded="false" aria-controls="#yamusthofa">YA MUSTHOFA</button>
       <div class="collapse" id="yamusthofa">
         <div class="card card-body">
@@ -3296,7 +3301,7 @@
         </div>
       </div>
 
-      <div id="yanabinalhadi"></div>
+      <div id="yanabinalhadi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yanabinalhadi" aria-expanded="false" aria-controls="#yanabinalhadi">YA NABINAL HADI</button>
       <div class="collapse" id="yanabinalhadi">
         <div class="card card-body">
@@ -3316,7 +3321,7 @@
         </div>
       </div>
 
-      <div id="yanabiyanminqidam"></div>
+      <div id="yanabiyanminqidam" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yanabiyanminqidam" aria-expanded="false" aria-controls="#yanabiyanminqidam">YA NABIYAN MIN QIDAM</button>
       <div class="collapse" id="yanabiyanminqidam">
         <div class="card card-body">
@@ -3338,7 +3343,7 @@
         </div>
       </div>
 
-      <div id="yanurolain"></div>
+      <div id="yanurolain" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yanurolain" aria-expanded="false" aria-controls="#yanurolain">YA NUROL 'AIN</button>
       <div class="collapse" id="yanurolain">
         <div class="card card-body">
@@ -3360,7 +3365,7 @@
         </div>
       </div>
 
-      <div id="yaqorial"></div>
+      <div id="yaqorial" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yaqorial" aria-expanded="false" aria-controls="#yaqorial">YA QORIAL QUR'ANI</button>
       <div class="collapse" id="yaqorial">
         <div class="card card-body">
@@ -3380,7 +3385,7 @@
         </div>
       </div>
 
-      <div id="qoshidbaitallah"></div>
+      <div id="qoshidbaitallah" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#qoshidbaitallah" aria-expanded="false" aria-controls="#qoshidbaitallah">YA QOSHID BAITALLAH</button>
       <div class="collapse" id="qoshidbaitallah">
         <div class="card card-body">
@@ -3400,7 +3405,7 @@
         </div>
       </div>
 
-      <div id="yarobbiantalhadi"></div>
+      <div id="yarobbiantalhadi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yarobbiantalhadi" aria-expanded="false" aria-controls="#yarobbiantalhadi">YA ROBBI ANTAL HADI</button>
       <div class="collapse" id="yarobbiantalhadi">
         <div class="card card-body">
@@ -3425,7 +3430,7 @@
         </div>
       </div>
 
-      <div id="yarobbiqodghofilna"></div>
+      <div id="yarobbiqodghofilna" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yarobbiqodghofilna" aria-expanded="false" aria-controls="#yarobbiqodghofilna">YA ROBBI QOD GHOFILNA</button>
       <div class="collapse" id="yarobbiqodghofilna">
         <div class="card card-body">
@@ -3440,7 +3445,7 @@
         </div>
       </div>
 
-      <div id="yarosulallahyanabi"></div>
+      <div id="yarosulallahyanabi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yarosulallahyanabi" aria-expanded="false" aria-controls="#yarosulallahyanabi">YA ROSULALLAH YA NABI</button>
       <div class="collapse" id="yarosulallahyanabi">
         <div class="card card-body">
@@ -3462,7 +3467,7 @@
         </div>
       </div>
 
-      <div id="yarobbanatarofna"></div>
+      <div id="yarobbanatarofna" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yarobbanatarofna" aria-expanded="false" aria-controls="#yarobbanatarofna">YA ROBBANA TAROFNA</button>
       <div class="collapse" id="yarobbanatarofna">
         <div class="card card-body">
@@ -3487,7 +3492,7 @@
         </div>
       </div>
 
-      <div id="yarosulallahsalamunalaik"></div>
+      <div id="yarosulallahsalamunalaik" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yarosulallahsalamunalaik" aria-expanded="false" aria-controls="#yarosulallahsalamunalaik">
         YA ROSULALLAHI SALAMUN ALAIK
       </button>
@@ -3510,7 +3515,7 @@
         </div>
       </div>
 
-      <div id="khudzbiyadi"></div>
+      <div id="khudzbiyadi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#khudzbiyadi" aria-expanded="false" aria-controls="#khudzbiyadi">YA ROSULALLAHI KHUDZBIYADI</button>
       <div class="collapse" id="khudzbiyadi">
         <div class="card card-body">
@@ -3532,7 +3537,7 @@
         </div>
       </div>
 
-      <div id="yasayyidasadat"></div>
+      <div id="yasayyidasadat" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yasayyidasadat" aria-expanded="false" aria-controls="#yasayyidasadat">YA SAYYIDA SADAT</button>
       <div class="collapse" id="yasayyidasadat">
         <div class="card card-body">
@@ -3550,7 +3555,7 @@
         </div>
       </div>
 
-      <div id="yatarim"></div>
+      <div id="yatarim" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yatarim" aria-expanded="false" aria-controls="#yatarim">YA TARIM</button>
       <div class="collapse" id="yatarim">
         <div class="card card-body">
@@ -3573,7 +3578,7 @@
         </div>
       </div>
 
-      <div id="yathoirwin"></div>
+      <div id="yathoirwin" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yathoirwin" aria-expanded="false" aria-controls="#yathoirwin">YA THOIR WIN</button>
       <div class="collapse" id="yathoirwin">
         <div class="card card-body">
@@ -3596,7 +3601,7 @@
         </div>
       </div>
       
-      <div id="yauhailalhub"></div>
+      <div id="yauhailalhub" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yauhailalhub" aria-expanded="false" aria-controls="#yauhailalhub">YA UHAILALHUB</button>
       <div class="collapse" id="yauhailalhub">
         <div class="card card-body">
@@ -3616,7 +3621,7 @@
         </div>
       </div>
 
-      <div id="yamanyaro"></div>
+      <div id="yamanyaro" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yamanyaro" aria-expanded="false" aria-controls="#yamanyaro">YAMAN YARO</button>
       <div class="collapse" id="yamanyaro">
         <div class="card card-body">

@@ -355,6 +355,9 @@ header {
     header {
         margin: 0 150px;
     }
+    .search-container:hover .search-input{
+        width: 120px;
+    }
     section {
         margin: 0 150px;
     }
@@ -370,6 +373,9 @@ header {
     .icon li a img{
         height: 60px;
         margin-top: -15px;
+    }
+    .search-container:hover .search-input{
+        width: 100px;
     }
     section {
         margin: 0 60px;
@@ -391,7 +397,7 @@ header {
         margin-left: 10px;
     }
     .search-container:hover .search-input{
-        width: 120px;
+        width: 100px;
     }
     section {
         margin: 0 auto;

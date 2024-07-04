@@ -128,14 +128,6 @@ header {
     font-size: 16px;
 }
 
-/* .search-container:hover #search-input {
-    width: 200px;
-    opacity: 1;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-} */
-
 .search-container:hover #search-input,
         #search-input:focus,
         #search-input:not(:placeholder-shown){
@@ -146,10 +138,6 @@ header {
     border-radius: 4px;
         }
 
-/* .search-container:hover .search-icon {
-    opacity: 50%;
-} */
-
 .search-container:hover .search-icon,
         #search-input:focus + .search-icon,
         #search-input:not(:placeholder-shown) + .search-icon{
@@ -158,9 +146,12 @@ header {
 
 .search-results {
     margin-top: 10px;
+    margin-left: 5px;
     border: 1px solid #ccc;
     max-height: 200px;
+    max-width: 200px;
     overflow-y: auto;
+    border-radius: 5px;
   }
   .search-results div {
     padding: 5px;

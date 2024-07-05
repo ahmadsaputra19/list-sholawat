@@ -226,6 +226,7 @@ header {
 .logoSholawat {
   cursor: pointer;
   position: fixed;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,7 +235,6 @@ header {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #fff;
 }
 
 .to-top {

@@ -221,7 +221,15 @@ header {
   font-family: 'Scheherazade New', serif;
   font-family: 'ScheherazadeNew-Medium', sans-serif;
   font-size: 2vw;
-  line-height: 1.8;
+  font-weight: bold;
+}
+
+.duror p {
+  font-family: 'Scheherazade New', serif;
+  font-family: 'ScheherazadeNew-Medium', sans-serif;
+  font-size: 2vw;
+  line-height: 1.9;
+  font-weight: bold;
 }
 
 .logoSholawat {
@@ -413,6 +421,9 @@ header {
   }
   .arab p {
     font-size: 4vw;
+  }
+  .duror p {
+    font-size: 6vw;
   }
   #contact {
     padding: 2rem;

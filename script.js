@@ -67,3 +67,36 @@ document.getElementById('search-input').addEventListener('input', function() {
         this.classList.remove('has-text');
     }
 });
+
+
+//menampilkan notifikasi
+window.addEventListener('load', () => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }).catch(error => {
+        console.log('Service Worker registration failed:', error);
+      });
+      
+      // Meminta izin untuk notifikasi
+      if ('Notification' in window) {
+        Notification.requestPermission().then(permission => {
+          if (permission === 'granted') {
+            console.log('Notification permission granted.');
+          } else {
+            console.log('Notification permission denied.');
+          }
+        });
+      }
+  
+      // Menangani pesan dari service worker
+      navigator.serviceWorker.addEventListener('message', event => {
+        if (event.data === 'new-content-available') {
+          if (confirm('New lyrics are available. Refresh to update?')) {
+            window.location.reload();
+          }
+        }
+      });
+    }
+  });
+  

@@ -20,10 +20,10 @@ self.addEventListener("fetch",(e)=>{
       const res = await fetch(e.request)
 
       //notifilasi lirik baru
-      if (e.request.url.endsWith('./index.html')) {
-        const oldLyrics = await resCache ? await resCache.text() : '';
+      if (e.request.url.endsWith('index.html')) {
+        const oldLyrics = resCache ? await resCache.text() : '';
         const newLyrics = await res.clone().text();
-
+      
         if (oldLyrics !== newLyrics) {
           self.registration.showNotification('Ada Lirik Baru Ditambahkan!', {
             body: 'Kami Telah Menambahkan List Sholawat Baru, Silahkan Bisa Update!',
@@ -31,7 +31,7 @@ self.addEventListener("fetch",(e)=>{
             tag: 'update-notification'
           });
         }
-      }
+      }      
 
       cache.put(e.request,res.clone())
       return res
@@ -47,6 +47,19 @@ self.addEventListener('notificationclick', event => {
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('./index.html') // Arahkan ke halaman lirik baru
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(windowClients => {
+      // Cek apakah sudah ada tab yang terbuka dengan URL yang sama
+      for (let i = 0; i < windowClients.length; i++) {
+        const client = windowClients[i];
+        if (client.url.includes('index.html') && 'focus' in client) {
+          return client.focus();
+        }
+      }
+      // Jika belum ada, buka tab baru
+      if (clients.openWindow) {
+        return clients.openWindow('/index.html');
+      }
+    })
   );
 });
+

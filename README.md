@@ -1,19 +1,13 @@
-Melengkapi Lirik Yang Masih Kurang / Salah
-1. Dinunaya
-2. Biladun Habahallah
-3. Yammimnah Walmadinah
-4. Annabi Shollualaih
-5. Sholallahu Ala Yasin
-
-
 Sholawat Baru Ditambahkan
-1. Syubbanul Wathon
-2. Dilluni
-3. Fihawa Khoiril Ibad
-4. Ala Baladi
-5. Arjukataghfiruli
-6. Habibi Anta Ya Muhammad
-7. Babul Afroh
-8. Halarrobi
-9. Alaika Sholallah
-10. Ya Banil Musthofa
+1. Aktsir Ukhoyya
+2. Nasimul Wasli
+3. Ahbabi Ya Ahbabi
+4. Syatta Syatta
+5. Qod Bada Ilayya
+6. Tajalla Maulidul Hadi
+7. Ya Ajmalal Anbiya'
+8. Hubbu Toha
+9. As'adul Ayyam
+10. Tohannabi
+11. Wulidal Habib
+12. Qod Tamamallah

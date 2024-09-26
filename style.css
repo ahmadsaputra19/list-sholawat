@@ -32,6 +32,10 @@
 body {
   background-color: #010310;
   color: #fff;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none;         /* Standard */
 }
 
 p {
@@ -118,6 +122,45 @@ header {
 .list li a:hover {
   color: #dbd400;
   transition: 0.3s ease-in-out;
+}
+
+/* Style untuk dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style untuk dropdown button */
+.dropdown button {
+  background-color: #010310;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* Style untuk dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .container {
@@ -267,6 +310,14 @@ header {
 }
 
 .duror p {
+  font-family: 'Scheherazade New', serif;
+  font-family: 'ScheherazadeNew-Medium', sans-serif;
+  font-size: 2vw;
+  line-height: 1.9;
+  font-weight: bold;
+}
+
+.barzanji p {
   font-family: 'Scheherazade New', serif;
   font-family: 'ScheherazadeNew-Medium', sans-serif;
   font-size: 2vw;

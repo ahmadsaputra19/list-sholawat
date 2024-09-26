@@ -100,3 +100,22 @@ window.addEventListener('load', () => {
     }
   });
   
+// Mencegah aksi copy
+document.addEventListener('copy', function(e) {
+  e.preventDefault();
+  alert('Teks tidak bisa dicopy!');
+});
+
+// Mencegah klik kanan
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+  alert('Klik kanan dinonaktifkan!');
+});
+
+ // Event listener untuk redirect ketika opsi dipilih
+ document.getElementById('pilihan').addEventListener('change', function() {
+  var url = this.value;
+  if (url) {
+      window.location.href = url; // Redirect ke halaman yang dipilih
+  }
+});

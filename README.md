@@ -1,6 +1,6 @@
 Sholawat Baru Ditambahkan
 1. Sholli Ya Robbi
-2. 
+2. Ya Rosulallah Salamun Alaik
 3. 
 4. 
 5. 

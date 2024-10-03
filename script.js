@@ -109,7 +109,7 @@ document.addEventListener('copy', function(e) {
 // Mencegah klik kanan
 document.addEventListener('contextmenu', function(e) {
   e.preventDefault();
-  alert('Klik kanan dinonaktifkan!');
+  // alert('Klik kanan dinonaktifkan!');
 });
 
  // Event listener untuk redirect ketika opsi dipilih

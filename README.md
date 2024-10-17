@@ -1,14 +1,12 @@
 Sholawat Baru Ditambahkan
-1. Sholli Ya Robbi
-2. Ya Rosulallah Salamun Alaik
-3. Siruli Nailil
-4. Ya Mualidal Hadi
-5. Wa Asyrobihi Robbi
-6. Iqro Ya Insan | Ibtihal
-7. Ala Nuri Rosulillah
-8. Allah Karim
-9. Allaha Arju
-10. Atainakum Muhayyina
-
-menambahkan javascript obfuscator, supaya script pada file script.js tidak mudah di copy.
+1. Uhibbuka Ya Robbi
+2. Ahzanu Qolbi
+3. Innal Habibal Musthofa
+4. Wa Rosulallah
+5. Yaman Ta'ala
+6. Khotobta Robbak
+7. ِAllah Allah Aghitsna Ya Rosulallah
+8. A'rif Bihubbillah
+9. Ahmad Ya Rosyiqol Qod
+10. Allahu Allah Lamma Nadani Huwa
 

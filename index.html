@@ -19,12 +19,12 @@
 
     <header id="home">
       <div class="navbar-nav">
-        <div class="run-teks">
+        <!-- <div class="run-teks">
           <div class="marquee">
             <span>CARA INSTALL, Klik Titik Tiga Di Pojok Kanan Atas, Lalu Tambahkan Ke Layar Beranda, lalu Install AA Media.</span>
             <br><span>UPDATE SHOLAWAT SETIAP MALAM JUM'AT!!!. Cara Update List Sholawat Dengan Menghapus Cache Web ini, Dan Kemudian Reload Webnya.</span>
           </div>
-        </div>
+        </div> -->
         <div class="nav-list">
           <div class="icon">
             <li><a href="#home"><img src="aamedia.png" alt="" /></a></li>
@@ -45,6 +45,20 @@
       </div>
     </header>
 
+    <!-- Notifikasi untuk iOS -->
+    <div id="ios-popup">
+      <div class="popup-content">
+      <h2>Petunjuk Install AA Media di iOS</h2>
+      <p style="color:white">Untuk menginstal aplikasi ini, ikuti langkah-langkah berikut:</p>
+      <ol>
+          <li>Ketuk tombol <strong>Bagikan</strong> (Share) di bagian bawah layar.</li>
+          <li>Pilih opsi <strong>Tambahkan ke Layar Utama</strong> (Add to Home Screen).</li>
+          <li>Ikuti petunjuk untuk menyelesaikan instalasi.</li>
+      </ol>
+        <button id="close-popup-btn">Tutup</button>
+      </div>
+    </div>
+
     <section id="dasboard">
       <div class="container">
         <div class="hero">
@@ -54,13 +68,15 @@
             <input type="text" id="search-input" placeholder="Search...">
             <div id="searchResults" class="search-results"></div>
             </div>
-            <h1>List Sholawat</h1>
+            <!-- <h1>List Sholawat</h1> -->
+            <button id="install-btn"><img src="./install.svg" alt=""> Install Apps</button>
+            <button id="update-btn"><img src="./update.svg" alt=""> Update Apps</button>
           </div>
           <div class="option">
             <a href="#assalamualaik">Assalamu'alaik</a>
             <a href="#assalamualaika">Assalamu'alaika Ahmaduya</a>
             <a href="#abalqosim">Abal Qosim</a>
-            <a href="#adhimisshola">Adhimisshola</a>
+            <a href="#adhimisshola | ibtihal">Adhimisshola | Ibtihal</a>
             <a href="#adinulana">Addinulana</a>
             <a href="#adfaita">Adfaita</a>
             <a href="#aghitsna ya rosulallah">Aghitsna Ya Rosulallah</a>
@@ -72,8 +88,11 @@
             <a href="#ahmad ya khoirol waro">Ahmad Ya Khoirol Waro</a>
             <a href="#ahmad ya rusyiqol qod">Ahmad Ya Rusyiqol Qod</a>
             <a href="#ahwal habib">Ahwal Habib</a>
-            <a href="#ahzanu qolbi">Ahzanu Qolbi</a>
+            <a href="#ahzanu qolbi | ibtihal">Ahzanu Qolbi | Ibtihal</a>
             <a href="#ainul uyun">Ainul Uyun</a>
+            <a href="#aini lighoiri jamalikum | ibtihal">Aini Lighoiri Jamalikum | ibtihal</a>
+            <a href="#aiqontu annaka">Aiqontu Annaka</a>
+            <a href="#ajib da'iyal mawla">Ajib Da'iyal Mawla</a>
             <a href="#ajmala dzikro">Ajmala Dzikro</a>
             <a href="#aksir bidzikrillah">Aksir Bidzikrillah</a>
             <a href="#aktsir ukhoyya">Aktsir Ukhoyya</a>
@@ -118,6 +137,7 @@
             <a href="#antal hana">Antal Hana</a>
             <a href="#anta nuskhotul akwan">Anta Nuskhotul Akwan</a>
             <a href="#anta qomaruna">Anta Qomaruna</a>
+            <a href="#antudkhilana robbi">Antudkhilana Robbi</a>
             <a href="#antum furudi">Antum Furudi</a>
             <a href="#arif bihubbillah">A'rif Bihubbillah</a>
             <a href="#arjukataghfiruli">Arjukataghfiruli</a>
@@ -135,7 +155,7 @@
             <a href="#azka taslimi">Azka Taslimi</a>
             <a href="#babul afroh">Babul Afroh</a>
             <a href="#bahebbak">Bahebbak</a>
-            <a href="#biladunhabahallah">Biladun Habahallah</a>
+            <a href="#biladunhabahallah | ibtihal">Biladun Habahallah | Ibtihal</a>
             <a href="#bil azmi wassabati">Bil Azmi Wassabati</a>
             <a href="#billahi ghorrid">Billahi Ghorrid</a>
             <a href="#billahikhudzlibiyadi">Billahi Khudzlibiyadi</a>
@@ -153,11 +173,12 @@
             <a href="#dinunaya">Dinunaya</a>
             <a href="#doa bulan rajab">Do'a Bulan Rajab</a>
             <a href="#dzikrullah">Dzikrullah</a>
-            <a href="#fahamdan">Fahamdan</a>
+            <a href="#fahamdan | ibtihal">Fahamdan | Ibtihal</a>
             <a href="#fajrurrobi">Fajrurrobi</a>
             <a href="#farsyi turob">Farsyi Turob</a>
             <a href="#fayaayyuharroju">Faya Ayyuharroju</a>
             <a href="#fihawa khoiril ibad">Fihawa Khoiril Ibad</a>
+            <a href="#fi hubbi sayyidina muhammad">Fi Hubbi Sayyidina Muhammad</a>
             <a href="#fityatal haq">Fityatal Haq</a>
             <a href="#ghorrid">Ghorrid Ya Syiblal Iman</a>
             <a href="#ghurroba">Ghurroba'</a>
@@ -191,13 +212,14 @@
             <a href="#innal habibal musthofa">Innal Habibal Musthofa</a>
             <a href="#insaaltum an ilahi">Insaaltum An Ilahi</a>
             <a href="#iqro ya insan | ibtihal">Iqro' Ya Insan | Ibtihal</a>
-            <a href="#irodatullah">Irodatullah</a>
+            <a href="#irodatullah | ibtihal">Irodatullah | Ibtihal</a>
             <a href="#iwak bandeng x lontong tahu">Iwak Bandeng X Lontong Tahu</a>
             <a href="#ja'akum awwah">Ja'akum Awwah</a>
             <a href="#jaddal husain">Jaddal Husain</a>
             <a href="#jainnabi">Ja'innabi</a>
             <a href="#jallaman qod arsalak">Jallaman Qod Arsalak</a>
             <a href="#jinadunya">Jina Dunya</a>
+            <a href="#jinal madinah">Ji'nal Madinah</a>
             <a href="#jinawajina">Jina Wajina</a>
             <a href="#joko tingkir walijowo">Joko Tingkir Wali Jowo</a>
             <a href="#kalamunqodim">Kalamun Qodim</a>
@@ -218,6 +240,7 @@
             <a href="#lawlaka">Lawlaka</a>
             <a href="#liasyrotun utfibihim">Liasyrotun Utfibihim</a>
             <a href="#likhomsatun utfibiha">Likhomsatun Utfibiha</a>
+            <a href="#lisani bihamdillah">Lisani Bihamdillah</a>
             <a href="#madaihuna">Madaihuna</a>
             <a href="#mamada">Mamadda</a>
             <a href="#man ana">Man Ana</a>
@@ -233,7 +256,8 @@
             <a href="#muhammad nabina (banjari)">Muhammad Nabina (Banjari)</a>
             <a href="#muhammadun asyroful">Muhammadun Asyroful</a>
             <a href="#nabi muhammad sifat-sifate">Nabi Muhammad Sifat-sifate</a>
-            <a href="#najaka qolbi">Najaka Qolbi</a>
+            <a href="#najaka qolbi | ibtihal">Najaka Qolbi | Ibtihal</a>
+            <a href="#namdaul hadi muhammad">Namda'ul Hadi Muhammad</a>
             <a href="#nasabe kanjeng nabi">Nasabe Kanjeng Nabi</a>
             <a href="#nasamatuhawak">Nasamatuhawak</a>
             <a href="#nasimul wasli">Nasimul Wasli</a>
@@ -261,11 +285,13 @@
             <a href="#robbahu bidzikri">Robbahu Bidzikri</a>
             <a href="#robbana sholli">Robbana Sholli</a>
             <a href="#robbi faj'al">Robbi Faj'al Mujtama'na</a>
+            <a href="#robbi inni yadzasifatil">Robbi Inni Yadzasifatil</a>
             <a href="#robbi kholaq">Robbi Kholaq</a>
             <a href="#robbi lahul asma'ul husna">Robbi Lahul Asma'ul Husna</a>
             <a href="#robbi qod aurostani">Robbi Qod Aurostani</a>
             <a href="#robbi sallimna">Robbi Sallimna</a>
             <a href="#rodhina ya banizzahro">Rodhina Ya Banizzahro</a>
+            <a href="#rohatil athyaru tasydu">Rohatil Athyaru Tasydu</a>
             <a href="#rohmaka ya robbal ibadi">Rohmaka Ya Robbal Ibadi</a>
             <a href="#rohman ya rohman">Rohman Ya Rohman</a>
             <a href="#romadhonu tajalla">Romadhonu Tajalla</a>
@@ -284,6 +310,7 @@
             <a href="#sholatullahi malahat">Sholatullahima Lahat Kawakib</a>
             <a href="#sholatullahi taghsyakum">Sholatullahi Taghsyakum</a>
             <a href="#sholatullahi wassalam">Sholatullahi Wassalam</a>
+            <a href="#sholatullah salamullah | ceng zamzam">Sholatullah Salamullah | Ceng Zamzam</a>
             <a href="#sholatun">Sholatun</a>
             <a href="#sholatun salam">Sholatun Salam</a>
             <a href="#sholawat asnawiyyah">Sholawat Asnawiyah</a>
@@ -293,6 +320,7 @@
             <a href="#sholawat qur'aniyyah">Sholawat Qur'aniyyah</a>
             <a href="#sholawatullahi taghsya">Sholawatullahi Taghsya</a>
             <a href="#shollallahu alayasin">Shollallahu Ala Yasin</a>
+            <a href="#sholla alaikallah">Sholla Alaikallah</a>
             <a href="#sholli ya robbi">Sholli Ya Robbi</a>
             <a href="#sholallahu ala muhammad">Sholallahu Ala Muhammad</a>
             <a href="#nabi yang mulia">Shollallahuwasallama X Nabi Yang Mulia</a>
@@ -318,8 +346,8 @@
             <a href="#tabahannasu bil idi">Tabahannasu Bil Idi</a>
             <a href="#tabarakallah">Tabarakallah</a>
             <a href="#tafakkur / athoitana ya robbi"> Tafakkur / Athoitana Ya Robbi</a>
-            <a href="#tahalla bisshidqi">Tahalla Bisshidqi</a>
-            <a href="#tarohabna">Tajalla Maulidul Hadi</a>
+            <a href="#tahalla bisshidqi | ibtihal">Tahalla Bisshidqi | Ibtihal</a>
+            <a href="#tajalla maulidul hadi">Tajalla Maulidul Hadi</a>
             <a href="#tarohabna">Tarohabna</a>
             <a href="#tasmauni robbah">Tasma'uni Robbah</a>
             <a href="#thoba'atka">Thoba'atka</a>
@@ -334,9 +362,9 @@
             <a href="#udzkur ilahaka">Udzkur Ilahaka</a>
             <a href="#uhibbuka ya robbi">Uhibbuka Ya Robbi</a>
             <a href="#urip ing dunyo">Urip Ing Dunyo</a>
-            <a href="#waajmalu minkalam">Wa Ajmalu Minkalam</a>
+            <a href="#waajmalu minkalam | ibtihal">Wa Ajmalu Minkalam | Ibtihal</a>
             <a href="#wa asyrobihi robbi">Wa Asyrobihi Robbi</a>
-            <a href="#walamma qosats qolbi">Walamma Qosats</a>
+            <a href="#walamma qosats qolbi | ibtihal">Walamma Qosats | Ibtihal</a>
             <a href="#wa rosulallah">Wa Rosulallah</a>
             <a href="#wulidal habib">Wulidal Habib</a>
             <a href="#wulidal huda">Wulidal Huda</a>
@@ -367,13 +395,13 @@
             <a href="#ya hama syauq">Ya Hama Syauq</a>
             <a href="#ya hannan ya mannan">Ya Hannan Ya Mannan</a>
             <a href="#ya hayatiruh">Ya Hayatiruh</a>
-            <a href="#ya hujrotan">Ya Hujrotan</a>
+            <a href="#ya hujrotan | ibtihal">Ya Hujrotan | Ibtihal</a>
             <a href="#ya ilahal kholqi">Ya Ilahal Kholqi</a>
             <a href="#ya imamarrusli">Ya Imamarrusli</a>
             <a href="#ya kitabal ghuyub">Ya Kitabal Ghuyub</a>
             <a href="#ya khitamal anbiya'">Ya Khitamal Anbiya'</a>
             <a href="#ya khoiro hadi">Ya Khoiro Hadi</a>
-            <a href="#ya khoiromanja">Ya Khoiro Manja</a>
+            <a href="#ya khoiromanja | ibtihal">Ya Khoiro Manja | Ibtihal</a>
             <a href="#ya khoiro maulud">Ya Khoiro Maulud</a>
             <a href="#ya kholiqol akwan">Ya Kholiqol Akwan</a>
             <a href="#ya laqolbin">Ya Laqolbin</a>
@@ -381,7 +409,7 @@
             <a href="#ya madihan">Ya Madihan</a>
             <a href="#ya makkatal asyrofi">Ya Makkatal Asyrofi</a>
             <a href="#ya malja'i">Ya Malja'i</a>
-            <a href="#yaman idza qultu">Yaman Idza Qultu</a>
+            <a href="#yaman idza qultu | ibtihal">Yaman Idza Qultu | Ibtihal</a>
             <a href="#yaman ta'ala">Yaman Ta'ala</a>
             <a href="#ya maulidal hadi">Ya Maulidal Hadi</a>
             <a href="#ya maulidal musthofa">Ya Maulidal Musthofa</a>
@@ -396,7 +424,7 @@
             <a href="#ya robba makah">Ya Robba Makah</a>
             <a href="#ya robbi antalhadi">Ya Robbi Antal Hadi</a>
             <a href="#ya robbibil musthofa">Ya Robbibil Musthofa</a>
-            <a href="#ya robbi qod ghofilna">Ya Robbi Qod Ghofilna</a>
+            <a href="#ya robbi qod ghofilna | ibtihal">Ya Robbi Qod Ghofilna | Ibtihal</a>
             <a href="#ya robbi sholli ala habibikal musthofa">Ya Robbi Sholli Ala Habibikal Musthofa</a>
             <a href="#ya robbi ya alimal hal">Ya Robbi Ya Alimal Hal</a>
             <a href="#ya rosulallah ya nabi / isyfa' lana">Ya Rosulallah Ya Nabi / Isyfa' Lana</a>
@@ -483,8 +511,8 @@
         </div>
       </div>
 
-      <div id="adhimisshola" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#adhimisshola" aria-expanded="false" aria-controls="#adhimisshola">ADHIMISSHOLA</button>
+      <div id="adhimisshola | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#adhimisshola" aria-expanded="false" aria-controls="#adhimisshola">ADHIMISSHOLA | IBTIHAL</button>
       <div class="collapse" id="adhimisshola">
         <div class="card card-body">
           <div class="arab text-center">
@@ -764,8 +792,8 @@
         </div>
       </div>
 
-      <div id="ahzanu qolbi" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ahzanuqolbi" aria-expanded="false" aria-controls="#ahzanuqolbi">AHZANU QOLBI</button>
+      <div id="ahzanu qolbi | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ahzanuqolbi" aria-expanded="false" aria-controls="#ahzanuqolbi">AHZANU QOLBI | IBTIHAL</button>
       <div class="collapse" id="ahzanuqolbi">
         <div class="card card-body">
           <div class="arab text-center">
@@ -801,6 +829,123 @@
             <p>وَمَدْحُهُ فِيهِ الشِّفَا وَمَقَامُهُ لَا يُجْحَدُ</p>
             <p>صَلَّی عَلَيْهِ اللهُ مَا بَدْرَ السَّمَا تَبَسَّمَا</p>
             <p>وَالآلِ مَا غَيْثٌ هَمَا وَتَلَا المَدِيحَ مُنشِدٌ</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="aini lighoiri jamalikum | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#aini" aria-expanded="false" aria-controls="#aini">AINI LIGHOIRI JAMALIKUM | IBTIHAL</button>
+      <div class="collapse" id="aini">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>عَيْنِی لِغَيْرِ</h2>
+            </div>
+            <p>عَيْنِی لِغَيْرِ جَمَالِکُمْ لَا تَنْظُرُوْا</p>
+            <p>وَسِوَاکُمُ فِی خَاطِرِی لَا يَخْطُرُ</p>
+            <p>فَإِذَا لَفَظْتُ فَفِی حَدِيْثِ جَمَالِکُمْ</p>
+            <p>وَإِذَا سَگتُّ فَفِيْکُمُوْا أَتَفَکَّرُوْا</p>
+            <p>غِبْتُمْ فَغَابَ تَوَاجُدِيْ عَنْ نَاظِرِيْ</p>
+            <p>فَلِذَاكَ عَيْشِيْ بِالْفِرَاقِ مُگدَّرُ</p>
+            <p>حُبِّیْ لَکُمْ طَبْعٌ بِغَيْرِ تَگلُّفٍ</p>
+            <p>يَا سَيِّدِی</p>
+            <p>وَالطَّبْعُ فِی الْإِنْسَانِ لَا يَتَغَيَّرُ صَبَّرْتُ قَلْبِی عَنْکُمُوْا فَأَجَابَنِيْ لَا صَبْرَ لِی لَا لَا</p>
+            <p>لَا صَبْرَ لِی لَا أَصْبِرُ</p>
+            <p>لَا صَبْرَ لِی حَتَّی يَرَاکُمْ نَاظِرِيْ</p>
+            <p>وَعَلَی مَحَبَّتِکُمْ أَمُوْتُ وَأُحْشَرُ</p>
+            <p>صَلَّی اللهُ عَلَی سَيِّدِنَا مُحَمَّدْ صَلَّی اللهُ عَلَيْهِ وَسَلَّمْ  ۳</p>
+            <p>حُبِّی لَکُمْ طَبْعٌ بِغَيْرِ تَگلُّفٍ</p>
+            <p>أَلَمْ يُرْدِكَ الرَّحْمَنُ فِی سُوْرَةِ الضُّحَی</p>
+            <p>وَحَاشَاكَ أَنْ تَرْضَی وَفِيْنَا مُعَدَّبٌ</p>
+            <p>أَتَرْضَی يَا أَبَا الزَّهْرَاءِ أَتَرْضَی مَعَ الْجَاهِ الْوَجِيْهِ ضَيَاعَنَا</p>
+            <p>وَنَحْنُ إِلَی أَعْتَابِ بَابِكَ نُنْسَبُ</p>
+            <p>إِذَا کُنْتَ مَحْمُوْدَ الْمَقَامِ</p>
+            <p>يَاسَيِّدِيْ ۳ يَارَسُوْلَ الله</p>
+            <p>فَإِنَّنَا عَلَی ثِقَةٍ أَلَيْسَ مِنَّا مُخَيَّبٌ</p>
+            <p>دَعَوْتَ فَلَبَّيْنَا سَمْعًا وَطَاعَةً لَبَّيْكَ رَسُوْلَ الله</p>
+            <p>وَحَاشَاكَ يَاسَيِّدِيْ حَاشَاكَ أَنْ نَدْعُوْكَ ثُمَّ نُعَذَّبٌ</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="aiqontu annaka" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#aiqontu" aria-expanded="false" aria-controls="#aiqontu">AIQONTU ANNAKA</button>
+      <div class="collapse" id="aiqontu">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>أَيْقَنْتُ أَنَّكَ</h2>
+            </div>
+            <p>أَيْقَنْتُ أَنَّكَ مُحْسِنٌ وَهَّابُ</p>
+            <p>فَقَرَعْتُ بَابَكَ وَهُوَ نِعْمَ الْبَابُ</p>
+            <p>وَطَفِقْتُ أَلْتَمِسُ الْوُصُوْلَ وَإِنَّمَا</p>
+            <p>بِالْإِجْتِهَادِ أُقِيْمَتِ الْأَسْبَابُ</p>
+            <p>نَادَتْنِيَ الْأَعْمَالُ تَدْعُوْنِى لَهَا</p>
+            <p>فَسَمِعْتُ لَکِنْ مَا هُنَاكَ جَوَابُ</p>
+            <p>مَا سَرِّنِيْ مَنِّيْ سِوَی حُبِّيْ لِمَنْ</p>
+            <p>أَحْبَبْتَهُمْ فَهُمُوْا هُمُ الْأَحْبَابُ</p>
+            <p>عَرَفُوْا جَلِيَّةَ أَمْرِهِمْ فَتَوَجَّهُوْا</p>
+            <p>بِالصِّدْقِ نَحْوَكَ بَعْدَ مَا قَدْ طَابُوْ</p>
+            <p>فَهُمُ الْعِبَادُ الْمُخْلَصُوْنَ وَگمْ بِهِمْ</p>
+            <p>عَبْدٌ گرِيْمٌ مَا عَلَيْهِ حِسَابُ</p>
+            <p>شَهِدَ الْحَقَائِقَ فَاخْتَفَی فِی نُوْرِهَا</p>
+            <p>فَعَلَيْهِ مِنْ ذَاكَ الْخَفَاءِ حِجَابُ</p>
+            <p>مَالَاحَ شَاهِدُهُ عَلَی ذِيْ فِطْنَةٍ</p>
+            <p>إِلَّا وَنَازَلَهُ بِهِ الْإِعْجَابُ</p>
+            <p>مِنَحٌ بِهَا خَصَ الْإِلَهُ مَنِ ارْتَضَی</p>
+            <p>مِنْ خَلْقِهِ سَمِعُوْا النِّدَی فَأَجَابُوْا</p>
+            <p>هَذَا لَعَمْرِيْ الْفَوْزُ وَالزُّلْفَی لِمَنْ</p>
+            <p>لَهُمُوْا إِذَا بَانَ الْخَفَا الْبَابُ</p>
+            <p>اَهْلِيْ وَنِعْمَ الْأَهْلُ حَسْبِيْ أَنَّنِيْ</p>
+            <p>فَرْعٌ لَهُمْ جَاءَتْ بِهِ الْأَنْسَابُ</p>
+            <p>نِعَمٌ بِهَاسَبَقَ الْقَضَاءِ بِشَاهِدِ</p>
+            <p>اَلتَّخْصِيْصِ لِی فُتِحَتْ بِهِ الْأَبْوَابُ</p>
+            <p>وَعَلَی فَوَائِدِهَا عَثَرْتُ بِشَاهِدٍ</p>
+            <p>فِی الذَّوْقِ أَسْفَرَ مَا عَلَيْهِ نِقَابُ</p>
+            <p>حَقَقْتُهُ وَعَرَفْتُهُ وَفَهِمْتُهُ</p>
+            <p>فَبِهِ الْقَبُوْلُ لَدَيَّ وَالْإِيْجَابُ</p>
+            <p>مُتَلَقَّيًا مِنْ حَضْرَةٍ نَبَوِيَّةْ</p>
+            <p>عَنْهَا تَلَقَّى عِلْمَهَا الْأَقْطَابُ</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="ajib da'iyal mawla" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#ajibda" aria-expanded="false" aria-controls="#ajibda">AJIB DA'IYAL MAWLA</button>
+      <div class="collapse" id="ajibda">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>أَجِبْ دَاعِیَ الْمَوْلَی</h2>
+            </div>
+            <p>أَقِمْ شَاهِدَ التَّقْصِيْرِ مِنْكَ مَعَ الضُّعْفِ</p>
+            <p>عَسَی وَاسِعُ الْأَلطَّافِ يُدْرِكُ بِالُّلطْفِ</p>
+            <p>وَقِفْ فِی مَقَامِ الذُّلِّ وَقْفَةَ نَادِمٍ</p>
+            <p>فَمَا قَدْ مَضَی فِی الْعُمْرِ مِنْ غَفْلَةٍ يَکْفِی</p>
+            <p>أَجِبْ دَاعِیَ الْمَوْلَی فَهَذَا کِتَابُهُ</p>
+            <p>يُنَادِيْكَ فَاسْرِعْ بِالْإِجَابَةِ وَاسْتَعْفِ</p>
+            <p>أَمَانَ لِلْعَاصِی الرُّجُوْعُّ لِرَبِّهِ</p>
+            <p>أَلَمْ يَدْرِ أَنَّ الذَّنْبَ يُکْتَبُ فِی الصُّحُفِ</p>
+            <p>رُوَيْدًا أَخَا الْعِصْيَانِ إِنَّكَ قَادِمٌ</p>
+            <p>عَلَی اللهِ وَهُوَ اللهُ يَعْلَمُ مَا تُخِفُّی</p>
+            <p>أَفِقْ وَانْتَبِهْ فَالْخَطْبُ صَعْبٌ وَأَمْرُهُ</p>
+            <p>مَرِيْرٌ وَشَأْنٌ اَلذَّنْبِ يُوْقِعُ فِی الْحَتْفِ</p>
+            <p>ظَلَمْتَ وَمَا إِلَّا لِنَفْسِكَ يَافَتَی</p>
+            <p>ظَلَمْتَ وَظَلْمٌ النَّفْسِ مِنْ اَقْبَخِ الْوَصْفِ</p>
+            <p>تَمَادَيْتَ حَتَّی زَلَّكَ الرُّشْدُ فَانْتَبِهْ</p>
+            <p>وَسَلْ غَافِرَ الزَّلَاتِ يُدْرِكُ بِالْعَطْفِ</p>
+            <p>أَيَا مَنْ بِقَيْدِ الْجَهِلْ أَضْحَی مَگبَّلًا</p>
+            <p>أَلَمْ تَدْرِ أَنَّ الْجَهْلَ يُلْجِی إِلَی الْخَسْفِ</p>
+            <p>إِلَی الْعِلْمِ فَاهْرَعْ وَاتَّخِذْ لَكَ مَسْلَکًا</p>
+            <p>مِنَ الرُّشْدِ يَهْدِی بَعْدَ ذَلِكَ لِلْگشْفِ</p>
+            <p>وَلَا تَكُ مِمَّنْ قَيَّدَتْهُ حُظُّوْطُّهُ</p>
+            <p>فَيَعْبُدَ رَبَّ الْعَالَمِيْنَ عَلَي حَرْفٍ</p>
+            <p>نَصَحْتُكَ فَاسْمَعْنِی وَقَابِلِ نَصِيْحَتِی</p>
+            <p>بِصِدْقٍ فَإِنِّی قَدْ دَعَوْتُكَ لِلْعُرْفِ</p>
+            <p>وَلَسْتُ بِنُصْحِی قَاصِدًا غَيْرَ عَاکِفٍ</p>
+            <p>عَلَی الذَّنْبِ مِثْلِی وَصْفُهُ فِی الْعَمَی وَصْفِی</p>
+            <p>بُلِيْتُ بِگسْبِ الذَّنْبِ وَالْإِثْمِ عَامِدًا</p>
+            <p>عَسَی غَافِرُ الزَّلَاتِ مِنْ ذَا الْبَلَا يَشْفِی</p>
           </div>
         </div>
       </div>
@@ -1259,23 +1404,23 @@
             <div class="judul">
               <h2>لَمَّا نَدَنِی هُوَ</h2>
             </div>
-            <p>أللهُ ألله لَمَّا نَدَنِی هُوَ  ، فَصِرْتُ عَبْدًا مَمْلُوْکَا لَهُ هُوَ</p>
-            <p>خَيْرِ الْبَرِيَّةْ نَظْرَةْ إِلَيَّ ، مَا أَنْتَ إِلَّا گنْزُ الْعَطِيَّةْ</p>
-            <p>يَا بَحْرَ فَضْلٍ وَتَاجَ عَدْلٍ ، جُدْلِيْ بِوَصْلٍ قَبْلَ الْمَنِيَّةْ</p>
-            <p>گمْ ذَا أُنَادِيْ يَا خَيْرَ هَادِيْ ، يَکْفِيْ عِبَادِی يَا نُوْرَ عَيْنَيَّا</p>
+            <p>أللهُ ألله لَمَّا نَدَنِی هُوَ  ۝ فَصِرْتُ عَبْدًا مَمْلُوْکَا لَهُ هُوَ</p>
+            <p>خَيْرِ الْبَرِيَّةْ نَظْرَةْ إِلَيَّ ۝ مَا أَنْتَ إِلَّا گنْزُ الْعَطِيَّةْ</p>
+            <p>يَا بَحْرَ فَضْلٍ وَتَاجَ عَدْلٍ ۝ جُدْلِيْ بِوَصْلٍ قَبْلَ الْمَنِيَّةْ</p>
+            <p>گمْ ذَا أُنَادِيْ يَا خَيْرَ هَادِيْ ۝ يَکْفِيْ عِبَادِی يَا نُوْرَ عَيْنَيَّا</p>
             <p>حَاشَاكَ تَغْفُلْ عَنَا وَتَبْخُلْ يَاخَيْرَ مُرْسَلْ إِرْحَمْ شَجِيَّةْ</p>
-            <p>إِنِّيْ مُحِبٌّ بِذِکْرِ أَحْمَدْ ، بَشِرْ مُحِبًّا وَلَوْ بِرُؤْيَا</p>
-            <p>أُهْدِيْكَ حِبِّيْ صَلَاةَ رَبِّی ، مَادَامَ قَلْبِی بِالذِکْرِ حَيَّا</p>
-            <p>لَوْ لَاكَ يَازِيْنَةَ الْوُجُوْدِ ، مَاطَابَ عَيْشِی وَلَا وُجُوْدِيْ</p>
-            <p>وَلَا نَرَنَّمْتُ فِی صَلَاتِيْ ، وَلَا رُکُوْعِی وَلَا سُجُوْدِيْ</p>
-            <p>أَيَا لَيَالِيْ الرِّضَا عَلَيْنَا ، عُوْدُی لِيَحْضُرْ مِنْكَ عُوْدِی</p>
-            <p>عُوْدِيْ عَلَيْنَا بِکُلِّ خَيْرٍ ، بِالْمُصْطَفَی طِيْبِ الْجُدُوْدِ</p>
-            <p>بِاللهِ عِيْدُوْا وِصَالِ عِيْدُوْا ، فَإِنَّ شَوْقِی لَکُمْ يَزِيْدُوْا</p>
-            <p>وَجَدِّدُوْا کُلَّ يَوْمِ وَصْلِ ، فَإِنَّ يَوْمَ وَصَالِ عِيْدُوْا</p>
-            <p>خُذُوْا فُؤَادِی وَفَتَشُّوْهُ ، وَقَلِّبُوْهُ گمَا تُرِيْدُوْا</p>
-            <p>فَإِنْ وَجَدْتُمْ فِيْهِ سِوَاکُمْ ، عَلَيَّ زِيْدُوْا الْبِعَادَ زِيْدُوْا</p>
-            <p>ثُمَّ الصَّلَاةُ عَلَی نَبِيْنَا ، وَآَلِهِ الرُّکَعِ السُّجُوْدِ</p>
-            <p>گذَا سَلَامِيْ عَلَی الدَّوَامْ ، عِنْدَ الصَّبَاحِ مَعَ الْعَشِيَّةْ</p>
+            <p>إِنِّيْ مُحِبٌّ بِذِکْرِ أَحْمَدْ ۝ بَشِرْ مُحِبًّا وَلَوْ بِرُؤْيَا</p>
+            <p>أُهْدِيْكَ حِبِّيْ صَلَاةَ رَبِّی ۝ مَادَامَ قَلْبِی بِالذِکْرِ حَيَّا</p>
+            <p>لَوْ لَاكَ يَازِيْنَةَ الْوُجُوْدِ ۝ مَاطَابَ عَيْشِی وَلَا وُجُوْدِيْ</p>
+            <p>وَلَا نَرَنَّمْتُ فِی صَلَاتِيْ ۝ وَلَا رُکُوْعِی وَلَا سُجُوْدِيْ</p>
+            <p>أَيَا لَيَالِيْ الرِّضَا عَلَيْنَا ۝ عُوْدُی لِيَحْضُرْ مِنْكَ عُوْدِی</p>
+            <p>عُوْدِيْ عَلَيْنَا بِکُلِّ خَيْرٍ ۝ بِالْمُصْطَفَی طِيْبِ الْجُدُوْدِ</p>
+            <p>بِاللهِ عِيْدُوْا وِصَالِ عِيْدُوْا ۝ فَإِنَّ شَوْقِی لَکُمْ يَزِيْدُوْا</p>
+            <p>وَجَدِّدُوْا کُلَّ يَوْمِ وَصْلِ ۝ فَإِنَّ يَوْمَ وَصَالِ عِيْدُوْا</p>
+            <p>خُذُوْا فُؤَادِی وَفَتَشُّوْهُ ۝ وَقَلِّبُوْهُ گمَا تُرِيْدُوْا</p>
+            <p>فَإِنْ وَجَدْتُمْ فِيْهِ سِوَاکُمْ ۝ عَلَيَّ زِيْدُوْا الْبِعَادَ زِيْدُوْا</p>
+            <p>ثُمَّ الصَّلَاةُ عَلَی نَبِيْنَا ۝ وَآَلِهِ الرُّکَعِ السُّجُوْدِ</p>
+            <p>گذَا سَلَامِيْ عَلَی الدَّوَامْ ۝ عِنْدَ الصَّبَاحِ مَعَ الْعَشِيَّةْ</p>
           </div>
         </div>
       </div>
@@ -1826,6 +1971,32 @@
         </div>
       </div>
 
+      <div id="antudkhilana robbi" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#antudkhilana" aria-expanded="false" aria-controls="#antudkhilana">ANTUDKHILANA ROBBI</button>
+      <div class="collapse" id="antudkhilana">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>اَنْ تُدْخِلَنَا رَبِّی</h2>
+            </div>
+            <p>اَنْ تُدْخِلَنَا رَبِّی الْجَنَّةْ ۝ هَذَا اَوَّلُ مَا نَتَمَنَّی</p>
+            <p>وَتَهَبَنَا الدَّرَجَاتِ الْعُلْيَا ۝ يَا ذَا الْمِنَّةْ يَا رَبْ</p>
+            <p>إِنْ مِتُّ اِلَهِی فَاجْعَلْ لِی فِی قَبْرِی نُوْرًا وَاغْفِرْلِی</p>
+            <p>وَاحْشُرْنِی مَعَ خَيْرِ الرُّسْلِ يَا ذَا الْمِنَّةْ يَارَبْ</p>
+            <p>لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِكَ يَا ذَا الرَّحْمَةِ يَا مَوْلَی</p>
+            <p>إِهْدِنَا وَاصْرِفْ عَنَّا الْبَلْوَی يَا ذَا الْمِنَّةْ يَا رَبْ</p>
+            <p>يَالِهَنَائِی حِيْنَ الْأَقِی بِالْجَنَّةِ اَهْلِی وَرِفَاقِی</p>
+            <p>فَرِحِيْنَ بِنِعَمِ الْخَلَّاقِ يَا ذَا الْمِنَّةْ يَارَبْ</p>
+            <p>أَنْ نَشْرَبَ مِنْ حَوْضِ الْگوْثَرْ وَشَفِيْعٌ يُرْوِيْنَااَکْثَرْ</p>
+            <p>اَنْ نَنْظُرَ لِلنُّوْرِ الْأَبْهَرْ يَا ذَا الْمِنَّةْ يَارَبْ</p>
+            <p>نَرْجُوْ يَارَبِّ زِيَارَةْ لِحَبِيْبِ الْقَلْبِ وَبِشَارَةْ</p>
+            <p>لِيَغِيْضَ الْقَلْبُ أَنْوَارَا يَا ذَا الْمِنَّةْ يَارَبْ</p>
+            <p>بِالْحِکْمَةِ يَا رَبِّ زِدْنَا وَبِعَمَلِ الْخَيْرِ اَسْعِدْنَا</p>
+            <p>بِالذِّکْرِ رَبِّی اَدِّبْنَا  يَا ذَا الْمِنَّةْ يَارَبْ</p>
+          </div>
+        </div>
+      </div>
+
       <div id="antum furudi" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#antumfurudi" aria-expanded="false" aria-controls="#antumfurudi">ANTUM FURUDI</button>
       <div class="collapse" id="antumfurudi">
@@ -2189,8 +2360,8 @@
         </div>
       </div>
 
-      <div id="biladunhabahallah" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#biladunhabahallah" aria-expanded="false" aria-controls="#biladunhabahallah">BILADUN HABAHALLAH</button>
+      <div id="biladunhabahallah | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#biladunhabahallah" aria-expanded="false" aria-controls="#biladunhabahallah">BILADUN HABAHALLAH | IBTIHAL</button>
       <div class="collapse" id="biladunhabahallah">
         <div class="card card-body">
           <div class="arab text-center">
@@ -2585,8 +2756,8 @@
         </div>
       </div>
 
-      <div id="fahamdan" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#fahamdan" aria-expanded="false" aria-controls="#fahamdan">FAHAMDAN</button>
+      <div id="fahamdan | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#fahamdan" aria-expanded="false" aria-controls="#fahamdan">FAHAMDAN | IBTIHAL</button>
       <div class="collapse" id="fahamdan">
         <div class="card card-body">
           <div class="arab text-center">
@@ -2716,6 +2887,35 @@
             <p>فَهَنِيْئًا لِفُؤَادٍ نَالَ مِنْ طَهَ الْمَرَام</p>
             <p>أَنَا فِيْ مَدْحِ مُحَمَّدٍ مُغْرَمٌ وَاللهُ يَشْهَد</p>
             <p>أَنَا فِيْ أَوْصَافِهِ قَدْ بِتُّ صَبًّا مُسْتَهَام</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="fi hubbi sayyidina muhammad" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#fihubbi" aria-expanded="false" aria-controls="#fihubbi">FI HUBBI SAYYIDINA MUHAMMAD</button>
+      <div class="collapse" id="fihubbi">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>فِی حُبِّ سَيِّدِنَا مُحَمَّدْ</h2>
+            </div>
+            <p>اَللّهُمَّ صَلِّ عَلَی مُحَمَّدْ يَارَبِّ صَلِّ عَلَيْهِ وَسَلِّمْ</p>
+            <p>فِی حُبِّ سَيِّدِنَا مُحَمَّدْ نُوْرُلِبَدْرِ الْهُدَی مُتَمَّمْ</p>
+            <p>قَلْبِی يَحِنُّ إِلَی مُحَمَّدْ مَازَالَ مِنْ وُجْدِهِ مُتَيَّمْ</p>
+            <p>مَالِی حَبِيْبٌ سِوَی مُحَمَّدْ  خَيْرِالرَّسُوْلٍ النَّبِیِّ الْمُگرَّمْ</p>
+            <p>شَوْقُ الْمُحِبِّ إِلَی مُحَمَّدْ أَفْنَاهُ ثُمَّ بِهِ تَهَيَّمْ</p>
+            <p>فِی الْحَشْرِ شَافِعُّنَا مُحَمَّدْ  مُنْجِی الْخَلَآئِقِ مِنْ جَهَنَّمْ</p>
+            <p>مِيْلَادُ سَيِّدِنَا مُحَمَّدْ  أُمُّ الْقُرَی بَلَدٌ مُعَظَّمْ</p>
+            <p>أَحْيَاالدُّجَازَمَنًا مُحَمَّدْ  مَوْلَاهُ سَلَّمَهُ وَگلَّمْ</p>
+            <p>أَدْعُوْكَ أَحْمَدُ يَامُحَمَّدْ  يَاسَيِّدَا الرُّسُلِ الْمُقَدَّمْ</p>
+            <p>إِشْفَعْ إِلَی اللهِ يَامُحَمَّدْ  يَوْمَ الْقِيَامَةِلِی أَنُعَّمْ</p>
+            <p>أَرْجُوْالشَّفَاعَةَ مِنْ مُحَمَّدْ لَوْ کُنْتُ أَرْتَکِبٌ الْمُحَرَّمْ</p>
+            <p>مُنْجَا وَمَلْجَأُنَا مُحَمَّدْ يَوْمَ الْهَوَانِ بِهِ تَحَشَّمْ</p>
+            <p>وَالنُّوْرُ جَآءَ بِهِ مُحَمَّدْ وَالْحَقَّ بَيَّنَ إِنْ تَگلَّمْ</p>
+            <p>أَعْلَا السَّمَآءِ سَمَامُحَمَّدْ جِبْرِيْلُ قَالَ لَهُ تَقَدَّمْ</p>
+            <p>وَالْجُنْدُ حِيْنَ غَزَا مُحَمَّدْ  مِنْهُمْ مَلَآئِگةٌ تَسَوَّمْ</p>
+            <p>وَالدِّيْنَ أَظْهَرَهُ مُحَمَّدْ وَالْکُفْرَ اَبْطَلَهُ فَهَدَّمْ</p>
+            <p>صَلَّی الْإِلَهُ عَلَی مُحَمَّدْ وَالْأَلِ کُلِّهِمِ وَسَلَّمْ</p>
           </div>
         </div>
       </div>
@@ -2988,7 +3188,7 @@
             <p>هاَمَ قَلْـــــبِى يَاقَلْبِى عِنْدَماَ ذُكِرَالنَّبِىْ اَلنَّبِيالْمُختَارْ</p>
             <p>دَمْعُ عَيْنِــيْ هَمَا قَدْ هَمَا شَوْقًا شَـــوْقًا لِــتلْكَ الدِّيَارْ</p>
             <p>مُحَمَّـــــدٌ ,أحْمَدٌطَهَ يَاطَهَ كَــامِلُ ,الْأَنْوَارْ</p>
-            <p>اِلَهِى اِذَا ضَاقَ فِيْنَاالز</p>
+            <p>اِلَهِى اِذَا ضَاقَ فِيْنَاالزَّمَان ۝ وَجَدْنَا بِظِلِّكَ فَيْضَ الْحَنَانْ</p>
             <p>اِلَهِى وَاِنْ طَا لَ لَيْلُ الْخُطُوْبِ ۝ اَتَيْنَا اِلَيْكَ نَرُوْمُ الْاَمَا ن</p>
             <p>لَكَ اللهُ نَدْعُوْ وَاَنْتَ الْمُجِيْب ۝ وَاَنْتَ اِلَى كُلِّ دَاعٍ قَرِيْب</p>
             <p>غَفُوْرٌ رَحِيمٌ رَؤُفٌ بِنَا ۝ اِذَاحَلَّ فِيْنَا زَمَانٌ عَصِيْب</p>
@@ -3498,8 +3698,8 @@
         </div>
       </div>
 
-      <div id="irodatullah" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#irodatullah" aria-expanded="false" aria-controls="#irodatullah">IRODATULLAH</button>
+      <div id="irodatullah | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#irodatullah" aria-expanded="false" aria-controls="#irodatullah">IRODATULLAH | IBTIHAL</button>
       <div class="collapse" id="irodatullah">
         <div class="card card-body">
           <div class="arab text-center">
@@ -3638,6 +3838,30 @@
             <p>وَالمَنْجَى فِي كِلْمَةِ اقْرَأ ۝ بِسْمِ الله وَخَلَّي الظَّنَّ</p>
             <p>وَاللهُ عَلِيمٌ بِمُرَادِه ۝ وَالله لَطِيفٌ بِعِبَادِه</p>
             <p>وَالحُرُّ المُؤْمِنُ بِفُؤَادِه ۝ قَدْ لَمَسَ الحِكْمَةَ وَالمَعْنَى</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="jinal madinah" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#jinalmad" aria-expanded="false" aria-controls="#jinalmad">JI'NAL MADINAH</button>
+      <div class="collapse" id="jinalmad">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>جِيْنَا الْمَدِيْنَةْ</h2>
+            </div>
+            <p>جِيْنَا الْمَدِيْنَةْ ۝ لَنْزُوْرْ نَبِيْنَا</p>
+            <p>زُرْنَا وَصَلَّيْنَا ۝ وَسَلَّمْنَا عَلَيْهِ</p>
+            <p>بِالْحَضْرَةْ وَبِالْبَابْ ۝ قَبَّلْنَا الْأَعْتَابْ</p>
+            <p>وَغَمَرْنَا النُّوْرْ ۝ مِنْ رَبِّ غَفُورْ</p>
+            <p>لَدَی أَغْلَی النُّورْ ۝ رَبِّ الْأَرْبَابْ</p>
+            <p>الله  الله  الله  ۝  الله  الله  الله</p>
+            <p>شُفْنَا الْحَبِيْبْ ۝ خَيَالْ مَايُغِيْبْ</p>
+            <p>عَنْ کُلِّ عَيْنٍ ۝ مِنَ الْأَحْبَابْ</p>
+            <p>الله  الله  الله  ۝  الله  الله  الله</p>
+            <p>وَهَلَّلْنَا وَگبَّرْنَا ۝ وَسَبَّحْنَا لِلْوَهَّابْ</p>
+            <p>قُلْنَا الشَّفَاعَةْ يَانَبِی ۝ جَانَا الْجَوَابِ مِنَ النَّبِی</p>
+            <p>طَلَبِ الْأَحِبَّةْ ۝ دَوْمًا مُجَابْ</p>
           </div>
         </div>
       </div>
@@ -4171,6 +4395,59 @@
         </div>
       </div>
 
+      <div id="lisani bihamdillah" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#lisanibi" aria-expanded="false" aria-controls="#lisanibi">LISANI BIHAMDILLAH</button>
+      <div class="collapse" id="lisanibi">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>لِسَانِيْ بِحَمْدِ الله</h2>
+            </div>
+            <p>لِسَانِيْ بِحَمْدِ الله قَدْ اَعْلَنَتْ شُکْرًا عَلَی نِعَّمِ لَّا اَسْتَطِيْعُ لَهَا حَصْرًا</p>
+            <p>فَمَا سَاعَةٌ مَرَّتْ عَلَيَّ وَلَحْظَةٌ مِنَ الْوَقْتِ إِلَّا جَدَّدَتْ عِنْدِيَ الْبُشْرَی</p>
+            <p>وَمِنْ فَضْلٍ رَبِّيْ أَرْتَجِيْ مِنْ نَوَالِهِ دَوَامَ الَّذِيْ وَالَی وَاَنْ يَشْرَحَ الصَّدْرَا</p>
+            <p>عَلَيْهِ اعْتِمَادِيْ وَهْوَ ذُخْرِيْ وَمَلْجَائِی وَگمْ قَدْ حَبَانِيْ مِنْ مَوَاهِبِهِ بِرَّا</p>
+            <p>تَنَعَّمْتُ بِالْإِحْسَانِ مِنْهُ تَفَضُّلًا عَلَی کُلِّ حَالَاتِيْ وَاَرْجُوْهُ فِی الْاُخْرَی</p>
+            <p>هُوَ اللهُ رَبِّيْ قَدْ وَقَفْتُ بِبَابِهِ اُنَاجِيْهِ يَا مَنْ يَعْلَمُ السِّرَّ وَالْجَهْرَا</p>
+            <p>إِلَيْكَ انْتَهَتْ حَاجَاتُ عَبْدٍ وَقَصْدُهُ رِضَاكَ وَ يَشْکُوْ الضُّعْفَ وَالْعَجْزَ وَالضُّرَّا</p>
+            <p>وَلَيْسَ لَهُ إِلَا التِّفَاتُكَ مَعْقِلًا يَقِيْهِ الْبَلَا وَالْبُؤْسَ وَالْهَمَّ وَالشَّرَّا</p>
+            <p>دَعَوْتُكَ وَالتَّقْصِيْرُ وَصْفِيْ وَإِنَّمَا لِاِ حْسَانِكَ الْمَأْلُوْفِ لَمْ اَلْتَمِسْ عُذْرًا</p>
+            <p>بِحَقِّكَ حَقِّقْ صِدْقَ حُبِّيْ وَوَجْهَتِيْ إِلَيْكَ وَاعْظِمْ لِيْ عَلَی ذَلِكَ الْاَجْرَا</p>
+            <p>وَ خُذْ بِيَدِيْ فِيْ مَسْلِكِ الرُّشْدِ ظَافِرًا بِقَصْدِيْ وَهَبْ لِيْ مِنْ مَوَاهِبِكَ الْکُبْرَی</p>
+            <p>وَمِنْ حَيْثُ مَا سَارَ الْحَبِيْبُ مُحَمَّدٌ وَاَتْبَاعُهُ خُذْبِيْ وَيَسِّرْلِيَ الْيُسْرَی</p>
+            <p>وَ نَوِّرْ بِنُوْرِ الْعِلْمِ قَلْبِيْ فَإِنَّنِيْ عَلَى الْجَهِلْ بَاقْ لَا اَطِّيْقُ لَهُ صَبْرًا</p>
+            <p>اَقُوْمُ بِهِ مِنْ حَيْثُ قَامَتْ شَوَاهِدُ التَّعَلُّقِ بِالْمُخْتَارْ فِيْ ذَلِكَ الْمَجْرَی</p>
+            <p>بِوَصْفِ اتِّبَاعٍ وَانْتِفَاعٍ يَقُوْدُنِيْ إِلَيْكَ مِنَ التَّوْفِيْقِ مَا يُوْجِبُ الذِّکْرَا</p>
+            <p>وَمَنْ گانَ مِثْلِيْ فِيْ الْبَطَالَةِ عَاکِفًا فَلَيْسَ لَهُ اِلَّا الَّذِيْ يُحْسِنُ الْغَفَرَا</p>
+            <p>فَغَفْرًا فَإِنِّيْ بِالذُّنُوْبِ مُقَيَّدٌ وَسِتْرًا فَإِنِّيْ مِنْكَ التَّمِسُ السِّتْرَا</p>
+            <p>بِجَاهِ رَسُوْلِ اللهِ أَشْرَفِ مُرْسَلٍ وَاعَلَی الْوَرَی فَضْلًا وَاَرْفَعِهِمْ قَدْرًا</p>
+            <p>عَلَيْهِ صَلَاةٌ مِنْكَ تَغْشَاهُ دَائِمًا مُگرَّرَةً تَسْتَغْرِقُ الْعَدَّ وَالدَّهْرَا</p>
+            <br><br><p>Artinya</p>
+            <p>
+              Lisanku selalu bersyukur dengan baca Alhamdulillah, atas ni’mat ni’mat yang aku tak mampu tuk menghitungnya.
+              <br>Tiada saat, detik yang berjalan di setiap waktu, melainkan menambah kegembiraan bagiku.
+              <br>Dari anugerah Tuhanku, ku selalu berharap, tuk dapatkan pemberian nya, dan agar melapangkan dadaku,
+              <br>Kepada-Nya peganganku, Dia simpanan-ku, tempat kembali-ku, sudah banyak pemberian-Nya kepadaku, sebagai bukti kebaikannya kepada-ku,
+              <br>Aku selalu mendapat Ni’mat, dengan kebaikan, selalu bertambah dalam setiap keadaan-ku, juga aku berharap, di akhirat kelak.
+              <br>Dialah Alloh yang aku selalu berdiri di depan pintu-Nya, aku selalu memanggilnya Wahai yang mngetahui yang rahasia dan yang jelas.
+              <br>Kepada-Mu, puncak hajat semua hamba, tujuannya adalah Ridlo-Mu. Dia melaporkan kekurangan, kelemahan dan kebutuhannya.
+              <br>Tiada baginya perhatian khusus kecuali kepada-Mu, hingga Engkau menjaganya dari kehancuranan, kesedihan dan kejahatan.
+              <br>Aku berdo’a kepada-Mu, walaupun sifatku ini rendah, dan sesungguhnya aku tak kenal lelah untuk menggapai kebaikan-Mu, yang selalu aku dambakan.
+              <br>Dengan Haq-Mu, yaqinkanlah kebenaran cinta-ku, tawajjuhku kepada-Mu, dengan demikian (aku memohon) besarkanlah pahala untuk-ku.
+              <br>Tariklah tanganku ke jalan kebenaran (agar) bisa ku dapatkan tujuanku, dan berikanlah kepadaku pemberian-Mu yang besar besar.
+              <br>Dari cara bagaimanapun habibku Muhammad berjalan, tuntunlah aku, dan berikanlah untuk-ku kemudahan kemudahan.
+              <br>Terangilah hatiku dengan Nur ilmu, karena sesungguhnya aku selalu dalam kebodohan, aku tak sabar lagi tuk menghadapinya.
+              <br>Aku bangun dengan kebodohan, dalam perjalanan ini yang menjadi  bukti hanyalah ikatanku dengan Nabi Al-Mukhtar.
+              <br>Sifatnya hanyalah mengikuti dan belajar, inilah yang menjadi pelajaran buatku, menuntunku tuk memperoleh petunjuk dari-Mu.
+              <br>Dan orang orang yang masih dalam kebatilan seperti aku, tiada harapan baginya selain kepada Dzat yang selalu mengampuni (dosa dosa).
+              <br>Maka ampunilah aku, karena sesungguhnya aku terbelenggu oleh dosa dosa, tutupilah kesalahan ku, sesungguhnya aku mengharapkan memperoleh tutup dari-Mu.
+              <br>Dengan kedudukan Rosulillah sebaik baik para utusan, manusia tertinggi keutamaannya, tertinggi pangkatnya.
+              <br>Sholawat dari-Mu, berikan kepadanya selama lamanya, terulang ulang yang menghabiskan semua hitungan dan masa.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div id="madaihuna" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#madaihuna" aria-expanded="false" aria-controls="#madaihuna">MADAIHUNA</button>
       <div class="collapse" id="madaihuna">
@@ -4555,8 +4832,8 @@
         </div>
       </div>
 
-      <div id="najaka qolbi" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#najaka" aria-expanded="false" aria-controls="#najaka">NAJAKA QOLBI</button>
+      <div id="najaka qolbi | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#najaka" aria-expanded="false" aria-controls="#najaka">NAJAKA QOLBI | IBTIHAL</button>
       <div class="collapse" id="najaka">
         <div class="card card-body">
           <div class="arab text-center">
@@ -4569,6 +4846,30 @@
             <p>فِيْ الْغَارِ يَاذَاالْمَنِّ وَالْاِحْسَانِ</p>
             <br><p>فَرِّجْ كُرُوْبَ الْمُسْلِمِيْنَ جَمِيْعِهِمْ</p>
             <p>يَارَبِّ ، وَاحْفَظْ عَلَيْنَانِعْمَةَالْاِيْمَانِ</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="namdaul hadi muhammad" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#namdaulhadi" aria-expanded="false" aria-controls="#namdaulhadi">NAMDA'UL HADI MUHAMMAD</button>
+      <div class="collapse" id="namdaulhadi">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>نَمْدَحُ الْهَادِی</h2>
+            </div>
+            <p>نَمْدَحُ الْهَادِی مُحَمَّدْ مَعْدِنَ الْإِحْسَان</p>
+            <p>حُبُّهُ فَرْضٌ عَلَيْنَا يَا ذَوِی الْعِرْفَان</p>
+            <p>کُلُّ مَنْ قَدْ هَامَ فِيْهِ يَجْتَنِی الرِّضْوَان</p>
+            <p>يَا هَنَائِی فِی هَوَاهُ إِنَّنِی نِشْوَان</p>
+            <p>گيْفَ لَا اَهْوَی جَمِيْلًا خُلْقُهُ الْقُرْأَن</p>
+            <p>جَدَّدَ الْأَعْيَادَ فِيْنَا مَوْلِدُ الْعَدْنَان</p>
+            <p>يَا رَسُوْلَ اللهِ إِنِّی طَالِبُ الْغُفْرَان</p>
+            <p>مِنْ ذُنُوْبِ أَثْقَلَتْنِی إِنْ دَنَا الْمِيْزَان</p>
+            <p>نَرْتَجِی رَحْمَاكَ عِنْدَ الْمَلِكِ الدَّيَان</p>
+            <p>إِنَّنِی اَرْجُوْكَ فَارْحَمْ قَلْبِيَ الْوَلْهَان</p>
+            <p>کُنْ شَفِيْعِی يَوْمَ حَشْرِی مِنْ لَظَی النِّيْرَان</p>
+            <p>سَادَتِی صَلُّوْا عَلَی مَنْ خَصَّهُ الرَّحْمَن</p>
           </div>
         </div>
       </div>
@@ -5241,6 +5542,28 @@
         </div>
       </div>
 
+      <div id="robbi inni yadzasifatil" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#robbiinni" aria-expanded="false" aria-controls="#robbiinni">ROBBI INNI YADZASIFATIL</button>
+      <div class="collapse" id="robbiinni">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>رَبِّ إِنِّی</h2>
+            </div>
+            <p>رَبِّ إِنِّی يَاذَا الصِّفَاتِ الْعَلِيَّهْ ۝ قَائِمٌ بِالْفِنَا أُرِيْدُ عَطِيَّه</p>
+            <p>تَحْتَ بَابِ الرَّجَا وَقُفْتُ بِذُلِّی ۝ فَأَغِثْنِی بِالْقَصْدِ قَبْلَ الْمَنِيَّه</p>
+            <p>وَالرَّسُوْلُ الْگرِيْمُ بَابُ رَّجَائِی ۝ فَهُوَ غَوْثِی وَغَوْثُ کُلِّ الْبَرِيَّه</p>
+            <p>فَأَغِثْنِيْ بِهِ وَبَلِّغْ فُؤَادِيْ ۝ کُلَّ مَا يَرْتَجِيْهِ مِنْ أُمُنِيَّه</p>
+            <p>وَاجْمَعِّ الشَّمْلَ فِی سُرُوْرٍ وَنُوْرٍ ۝ وَابْتِهَاجٍ بِالطَّلَعَةِ الْهَاشِمِيَّه</p>
+            <p>مَعَ صِدْقِ الْإِقْبَالِ فِی کُلِّ أَمْرٍ ۝ قَدْ قَصَدْنَا وَالصِّدْقِ فِی کُلِّ نِيَّه</p>
+            <p>رَبِّ فَاسْلُكْ بِنَا سَبِيْلَ رِجَالٍ ۝ سَلَکُوْا فِی التُّقَی طَرِيْقًا سَوِيَّه</p>
+            <p>وَاهْدِنَا رَبَّنَا لِمَا قَدْهَدَيْتَ ۝ السَّادَةَ الْعَارِفِيْنَ أَهْلَ الْمَزِيَّه</p>
+            <p>وَاجْعَلِ الْعِلْمَ مُقْتَدَانَا بِحُکْمِ ۝ الذَّوْقِ فِی فَهْمِ سِرِّ مَعْنَی الْمَعِيَّة</p>
+            <p>وَاحْفَظِ الْقَلْبَ أَنْ يُلِمَ بِهِ ۝ الشَّيْطَانُ وَالنَّفْسُ وَالْهَوَی وَالدَّنِيَّه</p>
+          </div>
+        </div>
+      </div>
+
       <div id="robbi kholaq" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#robbikholaq" aria-expanded="false" aria-controls="#robbikholaq">ROBBI KHOLAQ</button>
       <div class="collapse" id="robbikholaq">
@@ -5332,6 +5655,29 @@
             <p>وَأُمُّكِ بِضْعَةُ الْمُخْتَارِ طَهَ ۝ مُحَبَّبَةٌ إِلَى الْهَادِيْ نَبِيْنَا</p>
             <p>وَجَاءَ حَدِيْثُهُ يُتْلَى جِهَارًا ۝ لَقَدْ سَادَتْ نِسَاءُ الْعَالَمِيْنَ</p>
             <p>وَكَانَ الْمُصْطَفَى يَحْنُوْا عَلَيْهَا ۝ حُنُوَّ مَوَدَّةٍ عَطْفًا وَلِيْنَا</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="rohatil athyaru tasydu" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#rohatil" aria-expanded="false" aria-controls="#rohatil">ROHATIL ATHYARU TASYDU</button>
+      <div class="collapse" id="rohatil">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>رَاحَتِ الْأَ</h2>
+            </div>
+            <p>رَاحَتِ الْأَطْيَارُ تَشْدُو ۝ فِی لَيَالِی الْمَوْلِدِ</p>
+            <p>وَبَرِيْقُ النُّوْرِ يَبْدُو ۝ مِنْ مَعَانِی أَحْمَدِ</p>
+            <p>فِی لَيَالِی الْمَوْلِدِ</p>
+            <p>مَوْلِدُ الْهَادِی سَلَامَی ۝ اَنْتَ لِلْأَجْيَالْ عِيْدِ</p>
+            <p>نُوْرُكَ الْعَالِی تَسَامَی ۝ مِنْ حِمَی الْبَيْتِ الْمَجِيْد</p>
+            <p>وَبَرِيْقُ النُّوْرِ يَبْدُو ۝ مِنْ مَعَانِی أَحْمَدِ</p>
+            <p>فِی لَيَالِی الْمَوْلِدِ</p>
+            <p>عِنْدَمَا نَادَی الْمُنَادِی ۝ جَاءَ شَمْسُ الْعَالَمِيْن</p>
+            <p>وَازْدَهَتْ بَيْنَ الْعِبَادِ ۝ طَلْعَةُ الْهَادِی الْأَمِيْن</p>
+            <p>وَ بَرِيْقُ النُّوْرِ يَبْدُو ۝ مِنْ مَعَانِی أَحْمَدِ</p>
+            <p>فِی لَيَالِی الْمَوْلِدِ</p>
           </div>
         </div>
       </div>
@@ -5831,6 +6177,41 @@
         </div>
       </div>
 
+      <div id="sholatullah salamullah | ceng zamzam" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#sholatullahceng" aria-expanded="false" aria-controls="#sholatullahceng">SHOLATULLAH SALAMULLAH | CENG ZAMZAM</button>
+      <div class="collapse" id="sholatullahceng">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2></h2>
+            </div>
+            <p>ﺻَﻼَﺓُ ﺍﻟﻠﻪ ﺳَﻼَﻡُ ﺍﻟﻠﻪ ﻋَﻠَﻴْﻚَ ﻳَﺎﺃَﺟْﻤَﻞَ ﺧَﻠْﻖِ ﺍﻟﻠﻪ</p>
+            <p>اَلصُّبْحُ بَدَا مِنْ طَلْعَتِهِ , وَالَّيْلُ دَجَا مِنْ وَفْرَتِهِ</p>
+            <p>فَاقَ الرُّسُلَ فَضْلًا وَعَلَا , وَهَدَی سُّبُلَا بِدِلَالَتِهِ</p>
+            <p>يَا سَلَامُ اللهِ عَلَی حَبِيْبَنَا يَا صَلَاةُ الله</p>
+            <p>گنْزُ الْگرَمٍ مَوْلَی النِّعَمِ , هَادِی الْأُمَمِ بِشَرِيْعَتِهِ</p>
+            <p>أَزْگی النَّسَبِ أَعْلَی الْحَسَبِ , کُلَّ الْعَرَبِ فِی خِدْمَتِهِ</p>
+            <p>يَا سَلَامُ اللهِ عَلَی حَبِيْبَنَا يَا صَلَاةُ الله</p>
+            <p>سَعْتِ الشَّجَرُ نَطَقَ الْحَجَرُ , شُقَّ الْقَمَرُ بِإِشَارَتِهِ</p>
+            <p>جِبْرِيْلُ أَتَی لَيْلَ الْإِسْرَاءِ , وَالرَّبُّ دَعَاهُ لِحَضْرَتِهِ</p>
+            <p>يَا سَلَامُ اللهِ عَلَی حَبِيْبَنَا يَا صَلاَةُ الله</p>
+            <br><br><p>Artinya</p>
+            <p>
+              Sholawat Allah dan Salam Allah atasmu wahai Nabi, makhluk Allah yang paling indah.
+              <br>Sinar terang wajahmu (Nabi) Nampak bagaikan waktu shubuh (sebentar lagi terang).
+              <br>Hitam rambutmu (Nabi) bagaikan kegelapan malam.
+              <br>Nabi Muhammad, Keutamaannya melebihi para Rasul.
+              <br>Menunjukkan jalan (kebenaran) dengan petunjuknya.
+              <br>Gudangnya kedermawanan Rajanya kenikmatan Petunjuk umat dengan syari’atnya.
+              <br>Paling suci nasab keturunannya, Paling tinggi derajat nenek moyangnya, Semua orang Arab berkhidmah padanya.
+              <br>Pohon berjalan atas perintahnya dan bebatuan berbicara kepadanya, dengan isyaratnya, rembulan terbelah menjadi dua.
+              <br>Malaikat Jibril mendatanginya saat malam isra’.
+              <br>Allah memanggilnya untuk menghadap kepadannya.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div id="sholatun" class="content-div"></div>
       <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#sholatun" aria-expanded="false" aria-controls="#sholatun">SHOLATUN</button>
       <div class="collapse" id="sholatun">
@@ -6064,6 +6445,36 @@
             <p>أَعِذْنَا مِنَ النِّسْيَانْ  ۝  وَاخْتِمْنَا عَلَی الْإِيْمَانْ</p>
             <p>وَالثِّقَالَ فِى الْمِيْزَانْ ۝ وَاللِّقَاءَبِالْغُفْرَانْ</p>
             <p>وَالدُّخُوْلَ فِى الْجِنَانْ ۝ وَالنَّظَرَ بِالرِّضْوَانْ</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="sholla alaikallah" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#shollala" aria-expanded="false" aria-controls="#shollala">SHOLLA ALAIKALLAH</button>
+      <div class="collapse" id="shollala">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <h2>صَلَّى عَلَيْكَ اللهُ</h2>
+            </div>
+            <p>صَلَّى عَلَيْكَ اللهُ يَا عَدْنَانِی ۝ يَا مُصْطَفَی يَا صَفْوَةَ الرَّحْمَنِ</p>
+            <p>اَلْحَمْدُ لِلهِ الَّذِيْ اَعْطَانِی ۝ هَذَا الْغُلَامَ الطَّيِّبَ الْأَرْدَانِ</p>
+            <p>قَدْ سَادَ فِی الْمَهْدِ عَلَی الْغِلْمَانِ ۝ أُعِيْذُهُ بِالْبَيْتِ ذِی الْأَرْگانِ</p>
+            <p>حَتَّی اَرَاهُ بَالِغَ الْبُنْيَانِ ۝ أُعِيْذُهُ مِنْ شَرِّ ذِی شَنَآنِ</p>
+            <p>مِنْ حَاسِدٍ مُضْطَرِبِ الْعَيْنَانِ ۝ أَنْتَ الَّذِی سُمِّيْتَ فِی الْقُرْآنِ</p>
+            <p>أَحْمَدَ مَکْتُوْبٌ عَلَی الْجِنَانِ ۝ صَلَّی عَلَيْكَ اللهُ فِی الْأَحْيَانِ</p>
+            <p>اَحْمَدُهُ فِی السِّرِّ وَالْإِعْلَانِ ۝ حَقًّا عَلَی الْإِسْلَامِ وَالْإِيْمَانِ</p>
+            <p>يَا رَبَّنَا بِالْمُصْطَفَی الْعَدْنَانِی ۝ إِغْفِرْ ذُنُوْبِی ثُمَّ اَصْلِحْ شَانِی</p>
+            <br><br><p>Artinya</p>
+            <p>
+              Sholawat Allah selalu tercurah untukmu wahai pemuda keturunan ‘Adnan Wahai yang terpilih, yang suci lagi murah hati.
+              <br>Segala puji bagi Allah yg telah megaruniakan pemuda yang baik lagi pemurah ini.
+              <br>Dididik dan dimuliakan sejak dari dalam buaian, dilindungi di Ka’bah baitullah yg mulia.
+              <br>Kemudian ia beranjak dewasa, engkaulah yg disebut didalam Al-Quran,
+              <br>Ahmad kalimah yang tertulis di syurga, Allah sentiasa bersholawat atasmu tiada hentinya.
+              <br>Ku memujinya secara rahasia dan terang terangan (dalam hati dan dilafadzkan) yang benar benar haq atas islam dan iman.
+              <br>Ya Tuhan kami dengan berkat Al Mushthofa al ‘Adnani, ampunilah dosaku dan perbaikilah kiranya kebuntuan akalku.
+            </p>
           </div>
         </div>
       </div>
@@ -6689,8 +7100,8 @@
         </div>
       </div>
 
-      <div id="tahalla bisshidqi" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#tahalla" aria-expanded="false" aria-controls="#tahalla">TAHALLA BISSHIDQI</button>
+      <div id="tahalla bisshidqi | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#tahalla" aria-expanded="false" aria-controls="#tahalla">TAHALLA BISSHIDQI | IBTIHAL</button>
       <div class="collapse" id="tahalla">
         <div class="card card-body">
           <div class="arab text-center">
@@ -7058,8 +7469,8 @@
         </div>
       </div>
 
-      <div id="waajmalu minkalam" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#waajmalu" aria-expanded="false" aria-controls="#waajmalu">WA AJMALU MIN KALAM</button>
+      <div id="waajmalu minkalam | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#waajmalu" aria-expanded="false" aria-controls="#waajmalu">WA AJMALU MIN KALAM | IBTIHAL</button>
       <div class="collapse" id="waajmalu">
         <div class="card card-body">
           <div class="arab text-center">
@@ -7090,8 +7501,8 @@
         </div>
       </div>
 
-      <div id="walamma qosats qolbi" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#walammaqosats" aria-expanded="false" aria-controls="#walammaqosats">WALAMMA QOSATS</button>
+      <div id="walamma qosats qolbi | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#walammaqosats" aria-expanded="false" aria-controls="#walammaqosats">WALAMMA QOSATS | IBTIHAL</button>
       <div class="collapse" id="walammaqosats">
         <div class="card card-body">
           <div class="arab text-center">
@@ -7790,8 +8201,8 @@
         </div>
       </div>
 
-      <div id="ya hujrotan" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yahujrotan" aria-expanded="false" aria-controls="#yahujrotan">YA HUJROTAN</button>
+      <div id="ya hujrotan | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yahujrotan" aria-expanded="false" aria-controls="#yahujrotan">YA HUJROTAN | IBTIHAL</button>
       <div class="collapse" id="yahujrotan">
         <div class="card card-body">
           <div class="arab text-center">
@@ -7929,8 +8340,8 @@
         </div>
       </div>
 
-      <div id="ya khoiromanja" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yakhoiromanja" aria-expanded="false" aria-controls="#yakhoiromanja">YA KHOIRO MANJA</button>
+      <div id="ya khoiromanja | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yakhoiromanja" aria-expanded="false" aria-controls="#yakhoiromanja">YA KHOIRO MANJA | IBTIHAL</button>
       <div class="collapse" id="yakhoiromanja">
         <div class="card card-body">
           <div class="arab text-center">
@@ -8087,8 +8498,8 @@
         </div>
       </div>
 
-      <div id="yaman idza qultu" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#idzaqultu" aria-expanded="false" aria-controls="#idzaqultu">YAMAN IDZA QULTU</button>
+      <div id="yaman idza qultu | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#idzaqultu" aria-expanded="false" aria-controls="#idzaqultu">YAMAN IDZA QULTU | IBTIHAL</button>
       <div class="collapse" id="idzaqultu">
         <div class="card card-body">
           <div class="arab text-center">
@@ -8459,8 +8870,8 @@
         </div>
       </div>
 
-      <div id="ya robbi qod ghofilna" class="content-div"></div>
-      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yarobbiqodghofilna" aria-expanded="false" aria-controls="#yarobbiqodghofilna">YA ROBBI QOD GHOFILNA</button>
+      <div id="ya robbi qod ghofilna | ibtihal" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#yarobbiqodghofilna" aria-expanded="false" aria-controls="#yarobbiqodghofilna">YA ROBBI QOD GHOFILNA | IBTIHAL</button>
       <div class="collapse" id="yarobbiqodghofilna">
         <div class="card card-body">
           <div class="arab text-center">
@@ -8941,12 +9352,27 @@
 
     <script src="bootstrap.bundle.min.js"></script>
     <script src="script.obf.js"></script>
+    <!-- <script src="script.js"></script> -->
     <script>
+      // Mendaftarkan service worker
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('./sw.js')
+                  .then(registration => {
+                      console.log('ServiceWorker registered with scope:', registration.scope);
+                  })
+                  .catch(error => {
+                      console.error('ServiceWorker registration failed:', error);
+                  });
+          });
+      }
+    </script>
+    <!-- <script>
       window.addEventListener('load', () => {
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('sw.js');
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>

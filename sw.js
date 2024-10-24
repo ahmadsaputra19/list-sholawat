@@ -1,14 +1,31 @@
 const cacheName = "aamedia";
 const preCache = ["./", "./style.css", "./script.js", "./ScheherazadeNew-Medium.ttf", "./duror.html", "./barzanji.html"];
 
+// self.addEventListener("install", (e) => {
+//   console.log("Service worker installed");
+//   e.waitUntil(
+//     (async () => {
+//       const cache = await caches.open(cacheName);
+//       await cache.addAll(preCache); // Cache all specified files
+//     })()
+//   );
+// });
+
+// Menghindari caching otomatis saat install
 self.addEventListener("install", (e) => {
   console.log("Service worker installed");
-  e.waitUntil(
+  // Di sini kita tidak melakukan caching otomatis
+});
+
+// Event listener untuk caching yang di-trigger oleh pengguna
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === 'cache-files') {
     (async () => {
       const cache = await caches.open(cacheName);
       await cache.addAll(preCache); // Cache all specified files
-    })()
-  );
+      console.log("Files cached successfully!");
+    })();
+  }
 });
 
 self.addEventListener("fetch", (e) => {

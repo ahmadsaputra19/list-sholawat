@@ -130,6 +130,20 @@
     <script src="bootstrap.bundle.min.js"></script>
     <script src="script.obf.js"></script>
     <script>
+      // Mendaftarkan service worker
+      if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('./sw.js')
+                  .then(registration => {
+                      console.log('ServiceWorker registered with scope:', registration.scope);
+                  })
+                  .catch(error => {
+                      console.error('ServiceWorker registration failed:', error);
+                  });
+          });
+      }
+    </script>
+    <!-- <script>
       window.addEventListener('load', () => {
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('sw.js');
@@ -138,6 +152,6 @@
       document.addEventListener('contextmenu', function(e){
         e.preventDefault();
       });
-    </script>
+    </script> -->
   </body>
 </html>

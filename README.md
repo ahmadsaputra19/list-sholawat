@@ -1,14 +1,11 @@
 Sholawat Baru Ditambahkan
-1. Almajdu Biyaumika
-2. Ilahi Biya
-3. Ya Jaddassulalah
-4. Akhillaya
-5. Minarroja
-6. Doaut Tholabah 1 Sampai 4
-7. Shollallahu Robbuna
-8. Ya Tawwatub Alaina
-9. 
-10. 
-
-Request Dari Viewers AA Media | Pecinta Sholawat
- 
+1. Alkalimah
+2. Saykhona | Ma Assalam
+3. Ya Sayyidarrusli
+4. Ya Waridal Unsi
+5. Ya Suuni Min Zamani
+6. Ifrohun Nuru Atana
+7. Bidzalli | Ibtihal
+8. Ilahi Minka | Ibtihal
+9. Asyroqot Anwar Nabina
+10. Sholawat Busyro

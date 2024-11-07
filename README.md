@@ -1,11 +1,11 @@
 Sholawat Baru Ditambahkan
-1. Alkalimah
-2. Saykhona | Ma Assalam
-3. Ya Sayyidarrusli
-4. Ya Waridal Unsi
-5. Ya Suuni Min Zamani
-6. Ifrohun Nuru Atana
-7. Bidzalli | Ibtihal
-8. Ilahi Minka | Ibtihal
-9. Asyroqot Anwar Nabina
-10. Sholawat Busyro
+1. Sakinarruh
+2. Sholawat Uhudiyah
+3. Rojulun Syadid | Aantum Tadruna
+4. Injabartum
+5. Sayyidul Anbiya
+6. Sayyid Qolbi
+7. I'tirof | Ilahilastu
+8. Indal Fajri
+9. Nurul Huda Wafana
+10. Bika Asbahna

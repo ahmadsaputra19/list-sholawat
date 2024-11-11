@@ -1,11 +1,13 @@
 Sholawat Baru Ditambahkan
-1. Sakinarruh
-2. Sholawat Uhudiyah
-3. Rojulun Syadid | Aantum Tadruna
-4. Injabartum
-5. Sayyidul Anbiya
-6. Sayyid Qolbi
-7. I'tirof | Ilahilastu
-8. Indal Fajri
-9. Nurul Huda Wafana
-10. Bika Asbahna
+1. Assholatu Alaika Habibi
+2. Huwana Alaika | Ibtihal
+3. Idu Alayyal Wishol
+4. Ala Budik Ya Thoybah
+5. Robbi Saadi
+6. Al Islam
+7. Ya Malikal QOlbi
+8. Ashikhi Lii Aya Dunya
+9. Kun Maallah
+10. Ilaika Ilahal Kholqi
+11. Ya Sayyidi Ya Rosulallah
+12. Ya Rosulallah Ya Jaddal Hasanain

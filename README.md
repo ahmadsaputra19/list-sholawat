@@ -1,13 +1,13 @@
 Sholawat Baru Ditambahkan
-1. Assholatu Alaika Habibi
-2. Huwana Alaika | Ibtihal
-3. Idu Alayyal Wishol
-4. Ala Budik Ya Thoybah
-5. Robbi Saadi
-6. Al Islam
-7. Ya Malikal QOlbi
-8. Ashikhi Lii Aya Dunya
-9. Kun Maallah
-10. Ilaika Ilahal Kholqi
-11. Ya Sayyidi Ya Rosulallah
-12. Ya Rosulallah Ya Jaddal Hasanain
+1. Alamate Anak Sholeh
+2. Rindu Muhammadku
+3. Sholawat Burdah
+4. Syi'ir Tanpo Wathon
+5. Kidung Wahyu Kolosebo
+6. Anal Islamu Addabani
+7. Syi'ir Saben Malem Jum'at
+8. Padang Bulan
+9. Abki Ala Syam
+10. Amantu Billahi 
+11. Ustadzi
+12. Waya Ustadzi

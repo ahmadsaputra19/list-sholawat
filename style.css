@@ -358,6 +358,7 @@ header {
   font-size: 2vw;
   line-height: 1.9;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .duror p {

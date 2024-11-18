@@ -105,23 +105,23 @@ window.addEventListener('appinstalled', () => {
     installBtn.style.display = 'none';
 });
 
-// 2. Menangani update-btn untuk muncul setiap Kamis sore
-function checkForThursdayAfternoon() {
-    const now = new Date();
-    const dayOfWeek = now.getDay(); // Kamis = 4
-    const hours = now.getHours(); // Sore dimulai dari jam 15.00
-    if (dayOfWeek === 4 && hours >= 15) {
-      document.getElementById('update-btn').style.display = 'block';
-    } else {
-      document.getElementById('update-btn').style.display = 'none';
-    }
-  }
+// // 2. Menangani update-btn untuk muncul setiap Kamis sore
+// function checkForThursdayAfternoon() {
+//     const now = new Date();
+//     const dayOfWeek = now.getDay(); // Kamis = 4
+//     const hours = now.getHours(); // Sore dimulai dari jam 15.00
+//     if (dayOfWeek === 4 && hours >= 15) {
+//       document.getElementById('update-btn').style.display = 'block';
+//     } else {
+//       document.getElementById('update-btn').style.display = 'none';
+//     }
+//   };
   
-  // Panggil fungsi setiap menit untuk mengecek waktu
-  setInterval(checkForThursdayAfternoon, 60000);
-  checkForThursdayAfternoon(); // Panggilan awal saat halaman dimuat
+//   // Panggil fungsi setiap menit untuk mengecek waktu
+//   setInterval(checkForThursdayAfternoon, 60000);
+//   checkForThursdayAfternoon(); // Panggilan awal saat halaman dimuat
 
-  // 3. Menangani ios-popup
+// 3. Menangani ios-popup
 // const iosPopupClosed = localStorage.getItem('close-popup-btn');
 // if (!iosPopupClosed) {
 //   document.getElementById('ios-popup').style.display = 'block';
@@ -132,27 +132,27 @@ function checkForThursdayAfternoon() {
 //   localStorage.setItem('ios-popup-closed', 'true');
 // });
 // 1. Deteksi platform iOS secara lebih spesifik
-const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+// const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
-// 2. Cek apakah popup sudah pernah ditutup
-const iosPopupClosed = localStorage.getItem('ios-popup-closed');
+// // 2. Cek apakah popup sudah pernah ditutup
+// const iosPopupClosed = localStorage.getItem('ios-popup-closed');
 
-// 3. Tambahan pengecekan agar popup hanya muncul di perangkat mobile, bukan di desktop
-const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+// // 3. Tambahan pengecekan agar popup hanya muncul di perangkat mobile, bukan di desktop
+// const isMobile = /Mobi|Android/i.test(navigator.userAgent);
 
-if (isIOS && isMobile && !iosPopupClosed) {
-  // 4. Tampilkan popup jika platform adalah iOS dan popup belum pernah ditutup
-  document.getElementById('ios-popup').style.display = 'block';
-} else {
-  // 5. Sembunyikan popup jika tidak di iOS atau popup sudah pernah ditutup
-  document.getElementById('ios-popup').style.display = 'none';
-}
+// if (isIOS && isMobile && !iosPopupClosed) {
+//   // 4. Tampilkan popup jika platform adalah iOS dan popup belum pernah ditutup
+//   document.getElementById('ios-popup').style.display = 'block';
+// } else {
+//   // 5. Sembunyikan popup jika tidak di iOS atau popup sudah pernah ditutup
+//   document.getElementById('ios-popup').style.display = 'none';
+// };
 
-// 6. Tombol untuk menutup popup
-document.getElementById('close-popup-btn').addEventListener('click', () => {
-  document.getElementById('ios-popup').style.display = 'none';
-  localStorage.setItem('ios-popup-closed', 'true');
-});
+// // 6. Tombol untuk menutup popup
+// document.getElementById('close-popup-btn').addEventListener('click', () => {
+//   document.getElementById('ios-popup').style.display = 'block';
+//   localStorage.setItem('ios-popup-closed', 'true');
+// });
 
 
 // Mencegah aksi copy

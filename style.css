@@ -164,7 +164,7 @@ header {
 }
 
 /* Popup Menu */
-#install-btn, #update-btn {
+#install-btn {
   background: transparent;
   display: block;
   border: none;
@@ -181,7 +181,7 @@ header {
 .logo button:hover {
   background-color: #010310;
 }
-
+/* 
 #ios-popup {
   position: fixed;
   margin-top: 110px;
@@ -192,9 +192,9 @@ header {
   overflow-y: auto;
   border-radius: 10px;
   z-index: 1000;
-}
+} */
 
-.popup-content {
+/* .popup-content {
   padding: 10px;
   background-color: #010310;
   cursor: pointer;
@@ -211,7 +211,7 @@ header {
 
 #close-popup-btn:hover {
   background-color: #0056b3;
-}
+} */
 
 .container {
   padding: 20px;
@@ -276,7 +276,7 @@ header {
   margin-left: 5px;
   border: 1px solid #ccc;
   max-height: 200px;
-  max-width: 40vw;
+  width: 40vw;
   overflow-y: auto;
   border-radius: 5px;
 }

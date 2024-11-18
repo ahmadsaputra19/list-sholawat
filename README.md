@@ -1,13 +1,11 @@
 Sholawat Baru Ditambahkan
-1. Alamate Anak Sholeh
-2. Rindu Muhammadku
-3. Sholawat Burdah
-4. Syi'ir Tanpo Wathon
-5. Kidung Wahyu Kolosebo
-6. Anal Islamu Addabani
-7. Syi'ir Saben Malem Jum'at
-8. Padang Bulan
-9. Abki Ala Syam
-10. Amantu Billahi 
-11. Ustadzi
-12. Waya Ustadzi
+1. Sholawat Sa'adah
+2. Fina
+3. Ya Izzana
+4. Ya Man Li Ulahu
+5. Fi Sulaima Wahawaha
+6. Matsalulladzi
+7. Sholawat Banatiyyah
+8. Syi'ir Bocah Cilik-cilik
+9. Nurol Ain
+10. Ya Robbana Ajzillana

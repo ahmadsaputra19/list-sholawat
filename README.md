@@ -9,3 +9,9 @@ Sholawat Baru Ditambahkan
 8. Syi'ir Bocah Cilik-cilik
 9. Nurol Ain
 10. Ya Robbana Ajzillana
+11. Tanah Airku Indonesia
+
+Dalam Kitab Al Barzanji
+1. Ya Robbi Sholli
+2. Inna Fatahna
+3. Laqodja

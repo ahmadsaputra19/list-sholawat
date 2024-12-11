@@ -2,7 +2,7 @@ Sholawat Baru Ditambahkan
 1. Shollallahu Wasallama
 2. Hayyarol Albab
 3. Nabi Pemberi Syafaat
-4. 
+4. Hubban Tabassamu
 5. 
 6. 
 7. 
